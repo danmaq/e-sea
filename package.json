@@ -1,0 +1,21 @@
+{
+  "name": "e-sea",
+  "version": "0.1.0",
+  "description": "E-SEA official site",
+  "license": "Apache-2.0",
+  "author": "danmaq",
+  "keywords": [
+    "website"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danmaq/e-sea.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danmaq/e-sea/issues"
+  },
+  "homepage": "https://github.com/danmaq/e-sea#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,2 +1,1 @@
-# e-sea
-E-SEA Official site
+# E-SEA Official site
