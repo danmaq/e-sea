@@ -18,12 +18,12 @@
   "homepage": "https://github.com/danmaq/e-sea#readme",
   "scripts": {
     "start": "react-static start",
-    "stage": "react-static build --staging",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:stage": "react-static build --staging",
     "build": "react-static build",
     "bundle": "react-static bundle",
     "export": "react-static export",
-    "serve": "serve dist -p 3000 -s",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "serve dist -p 3000 -s"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
