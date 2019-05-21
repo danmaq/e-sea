@@ -106,6 +106,12 @@ typings/
 # next.js build output
 .next
 
+# ###### React Static #################
+
+/artifacts/
+/dist/
+/tmp/
+
 # ###### Vim ##########################
 
 # Swap

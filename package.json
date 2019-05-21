@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "E-SEA official site",
   "license": "Apache-2.0",
+  "private": true,
   "author": "danmaq",
   "keywords": [
     "website"
@@ -16,6 +17,33 @@
   },
   "homepage": "https://github.com/danmaq/e-sea#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-static start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:stage": "react-static build --staging",
+    "build": "react-static build",
+    "bundle": "react-static bundle",
+    "export": "react-static export",
+    "serve": "serve dist -p 3000 -s"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "axios": "^0.18.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-static": "^7.0.0",
+    "react-static-plugin-reach-router": "^7.0.0",
+    "react-static-plugin-sitemap": "^7.0.0",
+    "react-static-plugin-source-filesystem": "^7.0.0",
+    "react-static-plugin-typescript": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.23",
+    "@types/reach__router": "^1.2.2",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "@types/react-hot-loader": "^4.1.0",
+    "@types/webpack-env": "^1.13.6",
+    "serve": "10.1.1",
+    "typescript": "^3.4.1"
   }
 }
