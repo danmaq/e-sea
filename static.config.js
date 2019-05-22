@@ -5,7 +5,7 @@ import path from 'path';
 /** @typedef {import('react-static').ReactStaticConfig} ReactStaticConfig */
 /** @typedef {import('react-static').Route} Route */
 /** @typedef {import('react-static').RouteFlags} RouteFlags */
-/** @typedef {import('./types').default} Post */
+/** @typedef {import('./src/types').default} Post */
 
 /** @type {Pick<ReactStaticConfig, Exclude<keyof ReactStaticConfig, 'getRoutes'>> & { getRoutes: (flags: RouteFlags) => (Route[] | Promise<Route[]>), [o: string]: unknown }} */
 const config = {
