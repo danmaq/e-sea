@@ -1,12 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 export default () => (
   <div style={{ textAlign: 'center' }}>
-    <h1>
-      Welcome to React-Static <br /> + TypeScript
-    </h1>
+    <h1>Welcome to React-Static + TypeScript</h1>
     <p>
-      Learn{' '}
+      Learn
       <a href="https://github.com/sw-yx/react-typescript-cheatsheet">
         React + TypeScript
       </a>
@@ -15,4 +13,4 @@ export default () => (
       <a href="https://twitter.com/swyx">Report issues with this template</a>
     </p>
   </div>
-)
+);
