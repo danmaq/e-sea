@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouteData } from 'react-static';
 import { Link } from '@reach/router';
-import Post from 'types';
+import Post from '~/types';
 
 const FC: React.FC = () => {
   const { posts } = useRouteData<{ posts: Post[] }>();
