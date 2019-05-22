@@ -1,10 +1,12 @@
 import React from 'react';
 
-type DF = React.FC<{ path?: string }>;
-const Dynamic: DF = () => (
+const Dynamic: React.FC<{ path?: string }> = ({ path }) => (
   <div>
-    This is a dynamic page! It will not be statically exported, but is available
-    at runtime
+    <p>
+      This is a dynamic page! It will not be statically exported, but is
+      available at runtime.
+    </p>
+    <p>{path}</p>
   </div>
 );
 export default Dynamic;

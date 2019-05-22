@@ -16,10 +16,10 @@ if (typeof document !== 'undefined') {
     ? ReactDOM.hydrate
     : ReactDOM.render;
 
-  const render = (Comp: Function) => {
+  const render = (Component: React.FC) => {
     renderMethod(
       <AppContainer>
-        <Comp />
+        <Component />
       </AppContainer>,
       target
     );
@@ -30,8 +30,6 @@ if (typeof document !== 'undefined') {
 
   // Hot Module Replacement
   if (module && module.hot) {
-    module.hot.accept('./App', () => {
-      render(App);
-    });
+    module.hot.accept('./App', () => render(App));
   }
 }

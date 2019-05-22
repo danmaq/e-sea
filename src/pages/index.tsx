@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const FC: React.FC = () => (
   <div style={{ textAlign: 'center' }}>
     <h1>Welcome to React-Static + TypeScript</h1>
     <p>
@@ -14,3 +14,6 @@ export default () => (
     </p>
   </div>
 );
+FC.displayName = 'Pages';
+
+export default FC;

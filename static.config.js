@@ -1,24 +1,36 @@
 import axios from 'axios';
 import path from 'path';
-// Typescript support in static.config.js is not yet supported, but is coming in a future update!
 
-export default {
+// Typescript support in static.config.js is not yet supported, but is coming in a future update!
+/** @typedef {import('react-static').ReactStaticConfig} ReactStaticConfig */
+/** @typedef {import('react-static').Route} Route */
+/** @typedef {import('react-static').RouteFlags} RouteFlags */
+/** @typedef {import('./types').default} Post */
+
+/** @type {Pick<ReactStaticConfig, Exclude<keyof ReactStaticConfig, 'getRoutes'>> & { getRoutes: (flags: RouteFlags) => (Route[] | Promise<Route[]>), [o: string]: unknown }} */
+const config = {
   entry: 'index.tsx',
   getRoutes: async () => {
-    const { data: posts } /* :{ data: Post[] } */ = await axios.get(
+    /** @type {{ data: Post[] }} */
+    const { data: posts } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts'
     );
-    return [
+
+    /** @type {Route[]} */
+    const route = [
       {
         path: '/blog',
         getData: () => ({ posts }),
-        children: posts.map((post /* : Post */) => ({
+        children: posts.map(post => ({
+          getData: () => ({ post }),
           path: `/post/${post.id}`,
-          template: 'src/containers/Post',
-          getData: () => ({ post })
-        }))
+          replace: false,
+          template: 'src/containers/Post'
+        })),
+        replace: false
       }
     ];
+    return route;
   },
   plugins: [
     'react-static-plugin-typescript',
@@ -30,3 +42,5 @@ export default {
     require.resolve('react-static-plugin-sitemap')
   ]
 };
+
+export default config;
