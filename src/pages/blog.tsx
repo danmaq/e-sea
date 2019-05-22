@@ -3,8 +3,8 @@ import { useRouteData } from 'react-static';
 import { Link } from '@reach/router';
 import Post from 'types';
 
-export default () => {
-  const { posts }: { posts: Post[] } = useRouteData();
+const FC: React.FC = () => {
+  const { posts } = useRouteData<{ posts: Post[] }>();
 
   return (
     <div>
@@ -12,12 +12,15 @@ export default () => {
       <br />
       All Posts:
       <ul>
-        {posts.map(post => (
-          <li key={post.id}>
-            <Link to={`/blog/post/${post.id}/`}>{post.title}</Link>
+        {posts.map(({ id, title }) => (
+          <li key={id}>
+            <Link to={`/blog/post/${id}/`}>{title}</Link>
           </li>
         ))}
       </ul>
     </div>
   );
 };
+FC.displayName = 'Blog';
+
+export default FC;

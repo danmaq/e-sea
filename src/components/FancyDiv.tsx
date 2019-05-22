@@ -1,6 +1,8 @@
 import React from 'react';
 
-const FancyDiv: React.FC = ({ children }) => {
-  return <div style={{ border: '1px solid red' }}>{children}</div>;
-};
-export default FancyDiv;
+const FC: React.FC = ({ children }) => (
+  <div style={{ border: '1px solid red' }}>{children}</div>
+);
+FC.displayName = 'FancyDiv';
+
+export default FC;
