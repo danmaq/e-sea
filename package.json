@@ -25,25 +25,28 @@
     "export": "react-static export",
     "serve": "serve dist -p 3000 -s"
   },
+  "engines": {
+    "node": ">= 8.10"
+  },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "axios": "^0.18.0",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-static": "^7.0.0",
-    "react-static-plugin-reach-router": "^7.0.0",
-    "react-static-plugin-sitemap": "^7.0.0",
-    "react-static-plugin-source-filesystem": "^7.0.0",
-    "react-static-plugin-typescript": "^7.0.0"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-static": "^7.0.10",
+    "react-static-plugin-reach-router": "^7.0.10",
+    "react-static-plugin-sitemap": "^7.0.10",
+    "react-static-plugin-source-filesystem": "^7.0.10",
+    "react-static-plugin-typescript": "^7.0.10"
   },
   "devDependencies": {
-    "@types/node": "^10.12.23",
-    "@types/reach__router": "^1.2.2",
-    "@types/react": "^16.8.2",
-    "@types/react-dom": "^16.8.0",
+    "@types/node": "^12.0.2",
+    "@types/reach__router": "^1.2.4",
+    "@types/react": "^16.8.18",
+    "@types/react-dom": "^16.8.4",
     "@types/react-hot-loader": "^4.1.0",
-    "@types/webpack-env": "^1.13.6",
-    "serve": "10.1.1",
-    "typescript": "^3.4.1"
+    "@types/webpack-env": "^1.13.9",
+    "serve": "^11.0.0",
+    "typescript": "^3.4.5"
   }
 }
