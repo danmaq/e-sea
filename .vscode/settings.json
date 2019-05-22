@@ -1,0 +1,23 @@
+{
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.enable": true,
+  "eslint.nodePath": "./node_modules/.bin/eslint",
+  "eslint.provideLintTask": true,
+  "eslint.run": "onType",
+  "eslint.packageManager": "npm",
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ]
+}
