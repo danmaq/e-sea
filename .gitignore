@@ -1,3 +1,14 @@
+# ###### . Project ####################
+
+# React Static
+/artifacts/
+/dist/
+/tmp/
+
+# Wercker
+.wercker/
+
+
 # ###### Linux ########################
 *~
 
@@ -105,12 +116,6 @@ typings/
 
 # next.js build output
 .next
-
-# ###### React Static #################
-
-/artifacts/
-/dist/
-/tmp/
 
 # ###### Vim ##########################
 
