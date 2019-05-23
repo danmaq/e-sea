@@ -30,6 +30,7 @@ rules:
     - error
     - extensions:
         - .js
+        - .jsx
         - .ts
         - .tsx
   react/prop-types:
