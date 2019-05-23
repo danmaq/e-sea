@@ -10,22 +10,24 @@ addPrefetchExcludes(['dynamic']);
 
 const FC: React.FC = () => (
   <Root>
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/blog">Blog</Link>
-      <Link to="/dynamic">Dynamic</Link>
-    </nav>
-    <div className="content">
-      <FancyDiv>
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Dynamic path="dynamic" />
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
-      </FancyDiv>
-    </div>
+    <React.StrictMode>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/blog">Blog</Link>
+        <Link to="/dynamic">Dynamic</Link>
+      </nav>
+      <div className="content">
+        <FancyDiv>
+          <React.Suspense fallback={<em>Loading...</em>}>
+            <Router>
+              <Dynamic path="dynamic" />
+              <Routes path="*" />
+            </Router>
+          </React.Suspense>
+        </FancyDiv>
+      </div>
+    </React.StrictMode>
   </Root>
 );
 FC.displayName = 'App';
