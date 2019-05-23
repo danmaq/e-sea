@@ -1,5 +1,8 @@
+/* eslint-disable react/react-in-jsx-scope */
+
 import axios from 'axios';
 import path from 'path';
+import Root from './src/templates/Root';
 
 // Typescript support in static.config.js is not yet supported, but is coming in a future update!
 /** @typedef {import('react-static').ReactStaticConfig} ReactStaticConfig */
@@ -9,6 +12,7 @@ import path from 'path';
 
 /** @type {Pick<ReactStaticConfig, Exclude<keyof ReactStaticConfig, 'getRoutes'>> & { getRoutes: (flags: RouteFlags) => (Route[] | Promise<Route[]>), [o: string]: unknown }} */
 const config = {
+  Document: Root,
   entry: 'index.tsx',
   getRoutes: async () => {
     /** @type {{ data: Post[] }} */
