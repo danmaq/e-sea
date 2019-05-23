@@ -26,6 +26,8 @@ rules:
     - error
     - devDependencies:
         - static.config.js
+  no-console:
+    - warn
   react/jsx-filename-extension:
     - error
     - extensions:
