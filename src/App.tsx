@@ -1,6 +1,7 @@
+import CircularProgress from '@material-ui/core/CircularProgress';
+import { Link, Router } from '@reach/router';
 import React from 'react';
 import { Root, Routes, addPrefetchExcludes } from 'react-static';
-import { Link, Router } from '@reach/router';
 import FancyDiv from '~/components/FancyDiv';
 import Dynamic from '~/containers/Dynamic';
 import './app.css';
@@ -19,7 +20,7 @@ const FC: React.FC = () => (
       </nav>
       <div className="content">
         <FancyDiv>
-          <React.Suspense fallback={<em>Loading...</em>}>
+          <React.Suspense fallback={<CircularProgress />}>
             <Router>
               <Dynamic path="dynamic" />
               <Routes path="*" />
