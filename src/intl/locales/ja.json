@@ -1,0 +1,103 @@
+{
+  "pages": {
+    "top": {
+      "overview": {
+        "head": "Take it, Easy.",
+        "body": [
+          "e-sea は、国籍・人種・性別を超えて、あなたの能力に光を当てることができる会社です。",
+          "自分の可能性を信じてチャレンジする人を応援します。"
+        ]
+      },
+      "details": {
+        "head": "地方創生から派生し、$1 年目",
+        "body": [
+          "かつては、10 期目を迎えた食品商社でしたが、",
+          "国有化による事業・商権譲渡のため、システム部が独立しました。"
+        ]
+      },
+      "business": {
+        "head": "事業内容",
+        "body": [
+          {
+            "title": "WEB開発",
+            "note": [
+              ""
+            ]
+          },
+          {
+            "title": "SESコンサルティング",
+            "note": [
+              ""
+            ]
+          },
+          {
+            "title": "農林水産業",
+            "note": [
+              "農林水産省認可済"
+            ]
+          },
+          {
+            "title": "食品業界IT化",
+            "note": [
+              ""
+            ]
+          },
+          {
+            "title": "RPA開発",
+            "note": [
+              "Robotic Process Automation"
+            ]
+          },
+          {
+            "title": "BPO",
+            "note": [
+              "Business Process Outsourcing"
+            ]
+          },
+          {
+            "title": "M&A",
+            "note": [
+              "ブロックチェーン仲介実績あり"
+            ]
+          },
+          {
+            "title": "コンテンツパブリッシング",
+            "note": [
+              ""
+            ]
+          }
+        ]
+      },
+      "members": {
+        "head": "役員紹介",
+        "body": [
+          {
+            "role": "CEO",
+            "name": "Shuhei Nomura",
+            "skill": [
+              "WEBAPP DEVELOP",
+              "UI/UX DESIGN",
+              "WORKSHOP FOR DEVELOPES",
+              "VIRTUAL YOUTUBER PRODUCE"
+            ]
+          },
+          {
+            "role": "CTO",
+            "name": "Yuuki Hamada",
+            "skill": [
+              "WEBAPP DEVELOP",
+              "SOUND/MUSIC DESIGN",
+              "CASUAL GAME DEVELOP",
+              "HORROR CONTENT PRODUCE"
+            ]
+          },
+          {
+            "role": "Chairperson",
+            "name": "Hidetaka Izawa",
+            "skill": []
+          }
+        ]
+      }
+    }
+  }
+}
