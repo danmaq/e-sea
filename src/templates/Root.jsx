@@ -18,6 +18,14 @@ const FC = ({ Body, children, Head }) => ((
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no, viewport-fit=cover"
       />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
     </Head>
     <Body>{children}</Body>
   </html>
