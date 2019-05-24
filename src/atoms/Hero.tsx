@@ -7,6 +7,8 @@ const useStyles = makeStyles(() => ({
   hero: {
     background: 'linear-gradient(#AA7788, #666666)',
     backgroundAttachment: 'fixed',
+    maxHeight: '200vmin',
+    minHeight: '50vmax',
     height: '100vh',
     position: 'relative'
   },
