@@ -5,7 +5,8 @@ import React from 'react';
 
 const useStyles = makeStyles(() => ({
   hero: {
-    backgroundColor: '#666666',
+    background: 'linear-gradient(#AA7788, #666666)',
+    backgroundAttachment: 'fixed',
     height: '100vh',
     position: 'relative'
   },
