@@ -16,6 +16,6 @@ const FC: React.FC = () => {
 
   return <Container className={classes.hero} maxWidth={false} />;
 };
-FC.displayName = 'ParallaxImage';
+FC.displayName = 'Divider';
 
 export default FC;

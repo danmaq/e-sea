@@ -1,15 +1,16 @@
 import React from 'react';
 import Copy from '~/atoms/Copy';
 import Hero from '~/atoms/Hero';
-import ParallaxImage from '~/atoms/ParallaxImage';
+import Divider from '~/atoms/Divider';
 
 const FC: React.FC = () => {
   return (
     <main>
       <Hero />
       <Copy>Take it, Easy.</Copy>
-      <ParallaxImage />
+      <Divider />
       <Copy>Take it, Easy.</Copy>
+      <Divider />
     </main>
   );
 };
