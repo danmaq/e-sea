@@ -5,25 +5,50 @@ import React from 'react';
 
 const useStyles = makeStyles(() => ({
   body: {
-    backgroundColor: '#EEEEEE',
+    background: 'linear-gradient(#DDDDDD, #EEEEEE)',
+    display: 'table',
     height: '66vh'
+  },
+  inner: {
+    display: 'table-cell',
+    verticalAlign: 'middle'
   }
 }));
 
-const FC: React.FC = ({ children }) => {
-  const classes = useStyles();
+export interface Props {
+  caption: React.ReactNode;
+  details: React.ReactNode;
+}
 
-  return (
-    <Container className={classes.body} maxWidth="lg">
+const FC: React.FC<Props> = ({ caption, details }) => {
+  const classes = useStyles();
+  const children = (Array.isArray(details) ? details : [details]).map(
+    detail => (
       <Typography
-        component="h2"
-        variant="h1"
+        variant="subtitle1"
         align="center"
         color="textPrimary"
-        gutterBottom
+        paragraph
       >
-        {children}
+        {detail}
       </Typography>
+    )
+  );
+
+  return (
+    <Container className={classes.body} maxWidth={false}>
+      <div className={classes.inner}>
+        <Typography
+          component="h2"
+          variant="h2"
+          align="center"
+          color="textPrimary"
+          gutterBottom
+        >
+          {caption}
+        </Typography>
+        {children}
+      </div>
     </Container>
   );
 };
