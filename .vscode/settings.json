@@ -12,6 +12,10 @@
       "autoFix": true
     },
     {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
       "language": "typescript",
       "autoFix": true
     },
