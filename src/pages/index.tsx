@@ -1,7 +1,11 @@
 import React from 'react';
+import Business from '~/atoms/Business';
+import Contact from '~/atoms/Contact';
 import Copy from '~/atoms/Copy';
 import Hero from '~/atoms/Hero';
 import Divider from '~/atoms/Divider';
+import Team from '~/atoms/Team';
+import About from '~/molecules/About';
 
 const FC: React.FC = () => {
   return (
@@ -20,6 +24,16 @@ const FC: React.FC = () => {
         details="かつては、10 期目を迎えた食品商社でしたが、国有化による事業・商権譲渡のため、システム部が独立しました。"
       />
       <Divider />
+      <Business />
+      <Divider />
+      <Team />
+      <Divider />
+      <About />
+      <Divider />
+      <Contact />
+      <footer>
+        Copyright ©︎2010-2019 E-SEA CORPORATION All right reserved.
+      </footer>
     </main>
   );
 };
