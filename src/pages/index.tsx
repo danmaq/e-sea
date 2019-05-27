@@ -4,8 +4,8 @@ import Contact from '~/atoms/Contact';
 import Copy from '~/atoms/Copy';
 import Hero from '~/atoms/Hero';
 import Divider from '~/atoms/Divider';
-import Team from '~/atoms/Team';
 import About from '~/molecules/About';
+import Team from '~/molecules/Team';
 
 const FC: React.FC = () => {
   return (

@@ -16,20 +16,22 @@ const useStyles = makeStyles(() => ({
 }));
 
 export interface Props {
-  address: string[];
-  caption: string;
+  address: React.ReactNodeArray;
+  caption: React.ReactNode;
 }
 
 const FC: React.FC<Props> = ({ address, caption }) => {
   const classes = useStyles();
 
+  // FIXME: Edge and IE11 are not supported flatmap.
   return (
     <ListItemText
       className={classes.column}
       primary={caption}
-      secondary={address.flatMap(a => [a, <br />])}
+      secondary={address.flatMap(chunk => [chunk, <br />])}
     />
   );
 };
 FC.displayName = 'Address';
+
 export default FC;
