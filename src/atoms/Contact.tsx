@@ -37,7 +37,7 @@ const FC: React.FC = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            伊澤までお問い合わせください。
+            伊澤まで、お気軽にお問い合わせください。
           </a>
         </Typography>
       </Container>

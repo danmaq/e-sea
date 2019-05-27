@@ -5,6 +5,7 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
+import Member from '~/atoms/Member';
 
 const useStyles = makeStyles(() => ({
   body: {
@@ -37,53 +38,36 @@ const FC: React.FC = () => {
         >
           役員紹介
         </Typography>
-        <ExpansionPanel expanded>
-          <ExpansionPanelSummary>
-            <Typography className={classes.heading}>SHŪHEI Nomura</Typography>
-            <Typography className={classes.secondaryHeading}>
-              CEO / Web developer
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <ul>
-              <li>ウェブアプリ・モバイルアプリ開発</li>
-              <li>UI / UX デザイン</li>
-              <li>開発初心者向け教材作成・勉強会など</li>
-              <li>バーチャルYouTuberプロデュース・支援活動</li>
-            </ul>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded>
-          <ExpansionPanelSummary>
-            <Typography className={classes.heading}>YUUKI Hamada</Typography>
-            <Typography className={classes.secondaryHeading}>
-              CTO / Game developer
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <ul>
-              <li>ウェブアプリ・モバイルアプリ開発</li>
-              <li>サウンド・音楽制作</li>
-              <li>ゲーム開発</li>
-              <li>ホラーコンテンツ制作</li>
-            </ul>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded>
-          <ExpansionPanelSummary>
-            <Typography className={classes.heading}>HIDETAKA Izawa</Typography>
-            <Typography className={classes.secondaryHeading}>
-              CMO / Sales
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <ul>
-              <li>食品業界・水産業界の IT 化支援</li>
-              <li>BPO・ITO コンサルティング</li>
-              <li>東南アジアにおけるオフショア開発</li>
-            </ul>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+        <Member
+          name="SHŪHEI Nomura"
+          position="CEO / Web developer"
+          skills={[
+            'ウェブアプリ・モバイルアプリ開発',
+            'UI / UX デザイン',
+            '開発初心者向け教材作成・勉強会など',
+            'バーチャルYouTuberプロデュース・支援活動',
+            'ゲーム・ラノベなど各種作品におけるシナリオ ライティング'
+          ]}
+        />
+        <Member
+          name="YUUKI Hamada"
+          position="CTO / Game developer"
+          skills={[
+            'ウェブアプリ・モバイルアプリ開発',
+            'サウンド・音楽制作',
+            'ゲーム開発',
+            'ホラーコンテンツ制作'
+          ]}
+        />
+        <Member
+          name="HIDETAKA Izawa"
+          position="CMO / Sales"
+          skills={[
+            '食品業界・水産業界の IT 化支援',
+            'BPO・ITO コンサルティング',
+            '東南アジアにおけるオフショア開発支援'
+          ]}
+        />
       </Container>
     </Container>
   );

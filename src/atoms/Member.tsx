@@ -1,4 +1,3 @@
-import Container from '@material-ui/core/Container';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
@@ -23,32 +22,28 @@ const useStyles = makeStyles(() => ({
 }));
 
 export interface Props {
-  name: string;
-  position: string;
+  name: React.ReactNode;
+  position: React.ReactNode;
+  skills: React.ReactNodeArray;
 }
 
-const FC: React.FC = () => {
+const FC: React.FC<Props> = ({ children, name, position, skills }) => {
   const classes = useStyles();
+  const renderedSkills = skills.map(skill => <li>{skill}</li>);
 
   return (
     <ExpansionPanel expanded>
       <ExpansionPanelSummary>
-        <Typography className={classes.heading}>SHŪHEI Nomura</Typography>
-        <Typography className={classes.secondaryHeading}>
-          CEO / Web developer
-        </Typography>
+        <Typography className={classes.heading}>{name}</Typography>
+        <Typography className={classes.secondaryHeading}>{position}</Typography>
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
-        <ul>
-          <li>ウェブアプリ・モバイルアプリ開発</li>
-          <li>UI / UX デザイン</li>
-          <li>開発初心者向け教材作成・勉強会など</li>
-          <li>バーチャルYouTuberプロデュース・支援活動</li>
-        </ul>
+        {children}
+        <ul>{renderedSkills}</ul>
       </ExpansionPanelDetails>
     </ExpansionPanel>
   );
 };
-FC.displayName = 'Team';
+FC.displayName = 'Member';
 
 export default FC;
