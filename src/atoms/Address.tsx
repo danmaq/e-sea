@@ -22,13 +22,17 @@ export interface Props {
 
 const FC: React.FC<Props> = ({ address, caption }) => {
   const classes = useStyles();
+  const children = address.reduce<React.ReactNodeArray>(
+    (p, chunk) => [...p, chunk, <br />],
+    []
+  );
 
   // FIXME: Edge and IE11 are not supported flatmap.
   return (
     <ListItemText
       className={classes.column}
       primary={caption}
-      secondary={address.flatMap(chunk => [chunk, <br />])}
+      secondary={children}
     />
   );
 };
