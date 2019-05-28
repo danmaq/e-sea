@@ -1,23 +1,27 @@
 {
   "pages": {
     "top": {
+      "hero": [
+        "FOR TOMO",
+        "RROW FUN"
+      ],
       "overview": {
-        "head": "Take it, Easy.",
-        "body": [
+        "primary": "Take it, Easy.",
+        "secondary": [
           "e-sea は、国籍・人種・性別を超えて、あなたの能力に光を当てることができる会社です。",
           "自分の可能性を信じてチャレンジする人を応援します。"
         ]
       },
       "details": {
-        "head": "地方創生から派生し、9 年目",
-        "body": [
+        "primary": "地方創生から派生し、9 年目",
+        "secondary": [
           "かつては、10 期目を迎えた食品商社でしたが、",
           "国有化による事業・商権譲渡のため、システム部が独立しました。"
         ]
       },
       "business": {
-        "head": "事業内容",
-        "body": [
+        "primary": "事業内容",
+        "secondary": [
           {
             "title": "WEB 開発",
             "note": [
@@ -69,8 +73,8 @@
         ]
       },
       "members": {
-        "head": "役員紹介",
-        "body": [
+        "primary": "役員紹介",
+        "secondary": [
           {
             "role": "CEO / Web developer",
             "name": "SHŪHEI Nomura",
@@ -103,57 +107,64 @@
         ]
       },
       "about": {
-        "head": "会社概要",
-        "body": {
+        "primary": "会社概要",
+        "secondary": {
           "company": {
-            "primary": "",
+            "primary": "e-sea 株式会社",
             "secondary": [
-              ""
+              "英文登記: E-SEA CORPORATION"
             ]
           },
           "date": {
-            "primary": "",
+            "primary": "設立",
             "secondary": [
-              ""
+              "2010 年 2 月"
             ]
           },
           "money": {
-            "primary": "",
+            "primary": "資本金",
             "secondary": [
-              ""
+              "300 万円"
             ]
           },
           "offices": {
             "sales": {
-              "primary": "",
+              "primary": "営業部",
               "secondary": [
-                ""
+                "〒1600004",
+                "東京都新宿区四谷 1-18",
+                "オオノヤビル 8F GENZ Inc."
               ]
             },
             "management": {
-              "primary": "",
+              "primary": "請求管理部",
               "secondary": [
-                ""
+                "〒1700002",
+                "東京都豊島区巣鴨 3-21-16",
+                "グレースベルツリービル 5F 萩中央水産(株)"
               ]
             },
             "randb": {
-              "primary": "",
+              "primary": "R&D センター",
               "secondary": [
-                ""
+                "〒1750094",
+                "東京都板橋区成増 5-18-17-302"
               ]
             },
             "hq": {
-              "primary": "",
+              "primary": "本社",
               "secondary": [
-                ""
+                "〒7580011",
+                "山口県萩市椿東 6450-1",
+                "萩池々茶屋ビル 2F"
               ]
             }
           }
         }
       },
       "customers": {
-        "head": "取引先実績",
-        "body": [
+        "primary": "取引先実績",
+        "secondary": [
           [
             "石川中央魚市株式会社",
             "中央魚類株式会社（築地マルナカ）",
@@ -183,17 +194,15 @@
         ]
       },
       "contact": {
-        "head": "Contact",
-        "body": "伊澤までお問い合わせください。"
+        "primary": "Contact",
+        "secondary": "伊澤までお問い合わせください。"
       },
-      "footer": {
-        "head": "Copyright ©︎{date} {company} All right reserved."
-      }
+      "footer": "Copyright ©︎{date} {company} All right reserved."
     },
     "error": {
       "http404": {
-        "head": "404",
-        "body": [
+        "primary": "404",
+        "secondary": [
           "Oh no's! We couldn't find that page :("
         ]
       }
