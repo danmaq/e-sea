@@ -11,7 +11,11 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const FC: React.FC = () => {
+export interface Props {
+  src?: string;
+}
+
+const FC: React.FC<Props> = () => {
   const classes = useStyles();
 
   return <Container className={classes.hero} maxWidth={false} />;
