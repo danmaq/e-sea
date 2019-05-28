@@ -6,6 +6,11 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 
+import IntlMessage, { Member } from '~/intl';
+import { top } from '~/intl/messages';
+
+const intl = new IntlMessage();
+
 const useStyles = makeStyles(() => ({
   body: {
     background: 'linear-gradient(#DDDDDD, #EEEEEE)'
@@ -24,6 +29,8 @@ const useStyles = makeStyles(() => ({
 
 const FC: React.FC = () => {
   const classes = useStyles();
+  const { primary, secondary } = top.team;
+  const formattedBody = intl.format(secondary) as Member[];
 
   return (
     <Container className={classes.body} maxWidth={false}>
@@ -35,55 +42,25 @@ const FC: React.FC = () => {
           color="textPrimary"
           gutterBottom
         >
-          役員紹介
+          {intl.format(primary)}
         </Typography>
-        <ExpansionPanel expanded>
-          <ExpansionPanelSummary>
-            <Typography className={classes.heading}>SHŪHEI Nomura</Typography>
-            <Typography className={classes.secondaryHeading}>
-              CEO / Web developer
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <ul>
-              <li>ウェブアプリ・モバイルアプリ開発</li>
-              <li>UI / UX デザイン</li>
-              <li>開発初心者向け教材作成・勉強会など</li>
-              <li>バーチャルYouTuberプロデュース・支援活動</li>
-            </ul>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded>
-          <ExpansionPanelSummary>
-            <Typography className={classes.heading}>YUUKI Hamada</Typography>
-            <Typography className={classes.secondaryHeading}>
-              CTO / Game developer
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <ul>
-              <li>ウェブアプリ・モバイルアプリ開発</li>
-              <li>サウンド・音楽制作</li>
-              <li>ゲーム開発</li>
-              <li>ホラーコンテンツ制作</li>
-            </ul>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded>
-          <ExpansionPanelSummary>
-            <Typography className={classes.heading}>HIDETAKA Izawa</Typography>
-            <Typography className={classes.secondaryHeading}>
-              CMO / Sales
-            </Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <ul>
-              <li>食品業界・水産業界の IT 化支援</li>
-              <li>BPO・ITO コンサルティング</li>
-              <li>東南アジアにおけるオフショア開発</li>
-            </ul>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+        {formattedBody.map(item => (
+          <ExpansionPanel expanded>
+            <ExpansionPanelSummary>
+              <Typography className={classes.heading}>{item.name}</Typography>
+              <Typography className={classes.secondaryHeading}>
+                {item.role}
+              </Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <ul>
+                {item.skill.map(value => (
+                  <li>{value}</li>
+                ))}
+              </ul>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        ))}
       </Container>
     </Container>
   );
