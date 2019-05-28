@@ -5,6 +5,7 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
+import { Member as TeamMember } from '~/intl';
 
 const useStyles = makeStyles(() => ({
   body: {
@@ -27,23 +28,20 @@ export interface Props {
   position: string;
 }
 
-const FC: React.FC = () => {
+const FC: React.FC<TeamMember> = ({ name, role, skill }: TeamMember) => {
   const classes = useStyles();
 
   return (
     <ExpansionPanel expanded>
       <ExpansionPanelSummary>
-        <Typography className={classes.heading}>SHŪHEI Nomura</Typography>
-        <Typography className={classes.secondaryHeading}>
-          CEO / Web developer
-        </Typography>
+        <Typography className={classes.heading}>{name}</Typography>
+        <Typography className={classes.secondaryHeading}>{role}</Typography>
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
         <ul>
-          <li>ウェブアプリ・モバイルアプリ開発</li>
-          <li>UI / UX デザイン</li>
-          <li>開発初心者向け教材作成・勉強会など</li>
-          <li>バーチャルYouTuberプロデュース・支援活動</li>
+          {skill.map(value => (
+            <li>{value}</li>
+          ))}
         </ul>
       </ExpansionPanelDetails>
     </ExpansionPanel>
