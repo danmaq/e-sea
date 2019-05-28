@@ -107,8 +107,8 @@
         ]
       },
       "about": {
-        "primary": "会社概要",
-        "secondary": {
+        "head": "会社概要",
+        "body": {
           "company": {
             "primary": "e-sea 株式会社",
             "secondary": [
@@ -144,7 +144,7 @@
                 "グレースベルツリービル 5F 萩中央水産(株)"
               ]
             },
-            "randb": {
+            "randd": {
               "primary": "R&D センター",
               "secondary": [
                 "〒1750094",
