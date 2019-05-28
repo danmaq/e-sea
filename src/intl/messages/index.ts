@@ -23,6 +23,45 @@ export const top = {
     primary: { id: 'pages.top.team.primary' },
     secondary: { id: 'pages.top.team.secondary' }
   }),
+  about: {
+    title: defineMessages({
+      body: { id: 'pages.top.about.head' }
+    }),
+    company: defineMessages({
+      primary: { id: 'pages.top.about.body.company.primary' },
+      secondary: { id: 'pages.top.about.body.company.secondary' }
+    }),
+    date: defineMessages({
+      primary: { id: 'pages.top.about.body.date.primary' },
+      secondary: { id: 'pages.top.about.body.date.secondary' }
+    }),
+    money: defineMessages({
+      primary: { id: 'pages.top.about.body.money.primary' },
+      secondary: { id: 'pages.top.about.body.money.secondary' }
+    }),
+    offices: {
+      sales: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.sales.primary' },
+        secondary: { id: 'pages.top.about.body.offices.sales.secondary' }
+      }),
+      management: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.management.primary' },
+        secondary: { id: 'pages.top.about.body.offices.management.secondary' }
+      }),
+      randd: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.randd.primary' },
+        secondary: { id: 'pages.top.about.body.offices.randd.secondary' }
+      }),
+      hq: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.hq.primary' },
+        secondary: { id: 'pages.top.about.body.offices.hq.secondary' }
+      })
+    }
+  },
+  customers: defineMessages({
+    primary: { id: 'pages.top.customers.primary' },
+    secondary: { id: 'pages.top.customers.secondary' }
+  }),
   contact: defineMessages({
     primary: { id: 'pages.top.contact.primary' },
     secondary: { id: 'pages.top.contact.secondary' }

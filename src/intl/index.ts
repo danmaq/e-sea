@@ -26,6 +26,7 @@ export interface Member {
   skill: string[];
 }
 export interface About {
+  title: string;
   company: Item;
   date: Item;
   money: Item;
@@ -39,7 +40,7 @@ export interface About {
 export type Customers = string[];
 
 type Primaries = string;
-type Secondaries = string[] | Business[] | Member[] | About[] | Customers[];
+type Secondaries = string[] | Business[] | Member[] | About | Customers[];
 type Format = Primaries | Secondaries;
 
 const toLocalMessages = (json: JSON): LocalMessages => {

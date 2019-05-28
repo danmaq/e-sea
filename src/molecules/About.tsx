@@ -8,6 +8,11 @@ import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 import Address from '~/atoms/Address';
 
+import IntlMessage, { About, Customers } from '~/intl';
+import { top } from '~/intl/messages';
+
+const intl = new IntlMessage();
+
 const useStyles = makeStyles(() => ({
   body: {
     background: 'linear-gradient(#DDDDDD, #EEEEEE)'
@@ -23,6 +28,10 @@ const useStyles = makeStyles(() => ({
 
 const FC: React.FC = () => {
   const classes = useStyles();
+  const { title: aboutTitle, company, date, money, offices } = top.about;
+  const { primary: customersTitle, secondary } = top.customers;
+  const customers = intl.format(secondary) as Customers[];
+  console.log(customers);
 
   return (
     <Container className={classes.body} maxWidth={false}>
@@ -34,61 +43,49 @@ const FC: React.FC = () => {
           color="textPrimary"
           gutterBottom
         >
-          会社概要
+          {intl.format(aboutTitle.body)}
         </Typography>
         <List>
           <ListItem>
             <ListItemText
               className={classes.column}
-              primary="e-sea 株式会社"
-              secondary="英文登記: E-SEA CORPORATION"
+              primary={intl.format(company.primary)}
+              secondary={intl.format(company.secondary)}
             />
           </ListItem>
           <Divider variant="inset" component="li" />
           <ListItem>
             <ListItemText
               className={classes.column}
-              primary="設立"
-              secondary="2010 年 2 月"
+              primary={intl.format(date.primary)}
+              secondary={intl.format(date.secondary)}
             />
             <ListItemText
               className={classes.column}
-              primary="資本金"
-              secondary="300 万円"
+              primary={intl.format(money.primary)}
+              secondary={intl.format(money.secondary)}
             />
           </ListItem>
           <Divider variant="inset" component="li" />
           <ListItem>
             <Address
-              caption="営業部"
-              address={[
-                '〒1600004',
-                '東京都新宿区四谷 1-18',
-                'オオノヤビル 8F GENZ Inc.'
-              ]}
+              caption={intl.format(offices.sales.primary)}
+              address={intl.format(offices.sales.secondary) as string[]}
             />
             <Address
-              caption="請求管理部"
-              address={[
-                '〒1700002',
-                '東京都豊島区巣鴨 3-21-16',
-                'グレースベルツリービル 5F 萩中央水産(株)'
-              ]}
+              caption={intl.format(offices.management.primary)}
+              address={intl.format(offices.management.secondary) as string[]}
             />
           </ListItem>
           <Divider variant="inset" component="li" />
           <ListItem>
             <Address
-              caption="R&amp;D センター"
-              address={['〒1750094', '東京都板橋区成増 5-18-17-302']}
+              caption={intl.format(offices.randd.primary)}
+              address={intl.format(offices.randd.secondary) as string[]}
             />
             <Address
-              caption="本社"
-              address={[
-                '〒7580011',
-                '山口県萩市椿東 6450-1',
-                '萩池々茶屋ビル 2F'
-              ]}
+              caption={intl.format(offices.hq.primary)}
+              address={intl.format(offices.hq.secondary) as string[]}
             />
           </ListItem>
         </List>
@@ -99,107 +96,34 @@ const FC: React.FC = () => {
           color="textPrimary"
           gutterBottom
         >
-          取引先実績
+          {intl.format(customersTitle)}
         </Typography>
+
         <List>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="石川中央魚市株式会社"
-            />
-            <ListItemText
-              className={classes.column}
-              primary="中央魚類株式会社（築地マルナカ）"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="中部水産株式会社"
-            />
-            <ListItemText
-              className={classes.column}
-              primary="広島うおいち株式会社"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="JF山口・山口県漁協共同組合"
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText className={classes.column} primary="VIDA 株式会社" />
-            <ListItemText
-              className={classes.column}
-              primary="ナレッジスイート株式会社"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="株式会社サインウェーブ"
-            />
-            <ListItemText
-              className={classes.column}
-              primary="株式会社ナノ・メディア"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="株式会社アウスタ"
-            />
-            <ListItemText
-              className={classes.column}
-              primary="アスタリスクシステムズ株式会社"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="株式会社ジランソフト（韓国）"
-            />
-            <ListItemText
-              className={classes.column}
-              primary="ゾディアックアジア株式会社"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="株式会社オルトプラス"
-            />
-            <ListItemText
-              className={classes.column}
-              primary="株式会社EAS（ベトナム）"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="株式会社サイバード"
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="株式会社アスキング"
-            />
-            <ListItemText
-              className={classes.column}
-              primary="44マグナム・イベントスパースDAIA"
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              className={classes.column}
-              primary="アローサル・テクノロジー株式会社"
-            />
-            <ListItemText className={classes.column} primary="他 多数" />
-          </ListItem>
+          {customers.map((group, index, self) => {
+            const splitCount = 2;
+            return (
+              <div>
+                {Array.from({ length: Math.ceil(group.length / 2) }, (v, i) =>
+                  group.slice(i * splitCount, i * splitCount + splitCount)
+                ).map(line => {
+                  return (
+                    <ListItem>
+                      {line.map(item => (
+                        <ListItemText
+                          className={classes.column}
+                          primary={item}
+                        />
+                      ))}
+                    </ListItem>
+                  );
+                })}
+                {index !== self.length - 1 && (
+                  <Divider variant="inset" component="li" />
+                )}
+              </div>
+            );
+          })}
         </List>
       </Container>
     </Container>
