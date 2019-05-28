@@ -2,13 +2,13 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
-import logo from '~assets/logo.png';
+// import logo from '~assets/logo.png';
 
 const useStyles = makeStyles(() => ({
   hero: {
     background: 'linear-gradient(#AA7788, #666666)',
     backgroundAttachment: 'fixed',
-    backgroundImage: `url(${logo})`,
+    // backgroundImage: `url(${logo})`,
     maxHeight: '200vmin',
     minHeight: '50vmax',
     height: '100vh',

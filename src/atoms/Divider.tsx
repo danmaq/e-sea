@@ -18,7 +18,11 @@ export interface Props {
 const FC: React.FC<Props> = () => {
   const classes = useStyles();
 
-  return <Container className={classes.hero} maxWidth={false} />;
+  return (
+    <Container className={classes.hero} maxWidth={false}>
+      {''}
+    </Container>
+  );
 };
 FC.displayName = 'Divider';
 

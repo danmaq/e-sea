@@ -3,6 +3,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
+import hash from 'object-hash';
 import React from 'react';
 
 const useStyles = makeStyles(() => ({
@@ -29,7 +30,9 @@ export interface Props {
 
 const FC: React.FC<Props> = ({ children, name, position, skills }) => {
   const classes = useStyles();
-  const renderedSkills = skills.map(skill => <li>{skill}</li>);
+  const renderedSkills = skills.map(skill => (
+    <li key={hash(skill)}>{skill}</li>
+  ));
 
   return (
     <ExpansionPanel expanded>

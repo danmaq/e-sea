@@ -1,6 +1,7 @@
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
+import hash from 'object-hash';
 import React from 'react';
 
 const useStyles = makeStyles(() => ({
@@ -20,11 +21,12 @@ export interface Props {
   details: React.ReactNode;
 }
 
-const FC: React.FC<Props> = ({ caption, details }) => {
+const FC: React.FC<Props> = ({ caption, details = '' }) => {
   const classes = useStyles();
   const children = (Array.isArray(details) ? details : [details]).map(
     detail => (
       <Typography
+        key={hash(detail)}
         variant="subtitle1"
         align="center"
         color="textPrimary"
