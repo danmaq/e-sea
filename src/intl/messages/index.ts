@@ -22,6 +22,10 @@ export const top = {
   team: defineMessages({
     primary: { id: 'pages.top.team.primary' },
     secondary: { id: 'pages.top.team.secondary' }
+  }),
+  contact: defineMessages({
+    primary: { id: 'pages.top.contact.primary' },
+    secondary: { id: 'pages.top.contact.secondary' }
   })
 };
 
