@@ -9,7 +9,7 @@
         ]
       },
       "details": {
-        "head": "地方創生から派生し、$1 年目",
+        "head": "地方創生から派生し、9 年目",
         "body": [
           "かつては、10 期目を迎えた食品商社でしたが、",
           "国有化による事業・商権譲渡のため、システム部が独立しました。"
@@ -19,7 +19,7 @@
         "head": "事業内容",
         "body": [
           {
-            "title": "WEB開発",
+            "title": "WEB 開発",
             "note": [
               ""
             ]
@@ -37,13 +37,13 @@
             ]
           },
           {
-            "title": "食品業界IT化",
+            "title": "食品業界 IT 化",
             "note": [
               ""
             ]
           },
           {
-            "title": "RPA開発",
+            "title": "RPA 開発",
             "note": [
               "Robotic Process Automation"
             ]
@@ -55,7 +55,7 @@
             ]
           },
           {
-            "title": "M&A",
+            "title": "M & A",
             "note": [
               "ブロックチェーン仲介実績あり"
             ]
@@ -72,30 +72,129 @@
         "head": "役員紹介",
         "body": [
           {
-            "role": "CEO",
-            "name": "Shuhei Nomura",
+            "role": "CEO / Web developer",
+            "name": "SHŪHEI Nomura",
             "skill": [
-              "WEBAPP DEVELOP",
-              "UI/UX DESIGN",
-              "WORKSHOP FOR DEVELOPES",
-              "VIRTUAL YOUTUBER PRODUCE"
+              "ウェブアプリ・モバイルアプリ開発",
+              "UI / UX デザイン",
+              "開発初心者向け教材作成・勉強会など",
+              "バーチャルYouTuberプロデュース・支援活動"
             ]
           },
           {
-            "role": "CTO",
-            "name": "Yuuki Hamada",
+            "role": "CTO / Web & Game developer",
+            "name": "YUUKI Hamada",
             "skill": [
-              "WEBAPP DEVELOP",
-              "SOUND/MUSIC DESIGN",
-              "CASUAL GAME DEVELOP",
-              "HORROR CONTENT PRODUCE"
+              "ウェブアプリ・モバイルアプリ開発",
+              "サウンド・音楽制作",
+              "ゲーム開発",
+              "ホラーコンテンツ演出・ディレクション"
             ]
           },
           {
-            "role": "Chairperson",
-            "name": "Hidetaka Izawa",
-            "skill": []
+            "role": "CMO / Sales",
+            "name": "HIDETAKA Izawa",
+            "skill": [
+              "食品業界・水産業界の IT 化支援",
+              "BPO・ITO コンサルティング",
+              "東南アジアにおけるオフショア開発"
+            ]
           }
+        ]
+      },
+      "about": {
+        "head": "会社概要",
+        "body": {
+          "company": {
+            "primary": "",
+            "secondary": [
+              ""
+            ]
+          },
+          "date": {
+            "primary": "",
+            "secondary": [
+              ""
+            ]
+          },
+          "money": {
+            "primary": "",
+            "secondary": [
+              ""
+            ]
+          },
+          "offices": {
+            "sales": {
+              "primary": "",
+              "secondary": [
+                ""
+              ]
+            },
+            "management": {
+              "primary": "",
+              "secondary": [
+                ""
+              ]
+            },
+            "randb": {
+              "primary": "",
+              "secondary": [
+                ""
+              ]
+            },
+            "hq": {
+              "primary": "",
+              "secondary": [
+                ""
+              ]
+            }
+          }
+        }
+      },
+      "customers": {
+        "head": "取引先実績",
+        "body": [
+          [
+            "石川中央魚市株式会社",
+            "中央魚類株式会社（築地マルナカ）",
+            "中部水産株式会社",
+            "広島うおいち株式会社",
+            "JF山口・山口県漁協共同組合"
+          ],
+          [
+            "VIDA 株式会社",
+            "ナレッジスイート株式会社",
+            "株式会社サインウェーブ",
+            "株式会社ナノ・メディア",
+            "株式会社アウスタ",
+            "アスタリスクシステムズ株式会社",
+            "株式会社ジランソフト（韓国）",
+            "ゾディアックアジア株式会社",
+            "株式会社オルトプラス",
+            "株式会社EAS（ベトナム）",
+            "株式会社サイバード"
+          ],
+          [
+            "株式会社アスキング",
+            "44マグナム・イベントスパースDAIA",
+            "アローサル・テクノロジー株式会社",
+            "他 多数"
+          ]
+        ]
+      },
+      "contact": {
+        "head": "Contact",
+        "body": "伊澤までお問い合わせください。"
+      },
+      "footer": {
+        "head": "Copyright ©︎{date} {company} All right reserved."
+      }
+    },
+    "error": {
+      "http404": {
+        "head": "404",
+        "body": [
+          "Oh no's! We couldn't find that page :("
         ]
       }
     }
