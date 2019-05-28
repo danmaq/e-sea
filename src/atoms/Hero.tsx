@@ -3,6 +3,11 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 
+import IntlMessage from '~/intl';
+import { top } from '~/intl/messages';
+
+const intl = new IntlMessage();
+
 const useStyles = makeStyles(() => ({
   hero: {
     background: 'linear-gradient(#AA7788, #666666)',
@@ -29,6 +34,7 @@ const useStyles = makeStyles(() => ({
 
 const FC: React.FC = () => {
   const classes = useStyles();
+  const { hero } = top;
 
   return (
     <Container className={classes.hero} maxWidth={false}>
@@ -40,9 +46,7 @@ const FC: React.FC = () => {
         color="textPrimary"
         gutterBottom
       >
-        FOR TOMO
-        <wbr />
-        RROW FUN
+        {intl.format(hero.body)}
       </Typography>
     </Container>
   );

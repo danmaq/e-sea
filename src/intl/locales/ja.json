@@ -1,25 +1,29 @@
 {
   "pages": {
     "top": {
+      "hero": [
+        "FOR TOMO",
+        "RROW FUN"
+      ],
       "overview": {
-        "head": "Take it, Easy.",
-        "body": [
+        "primary": "Take it, Easy.",
+        "secondary": [
           "e-sea は、国籍・人種・性別を超えて、あなたの能力に光を当てることができる会社です。",
           "自分の可能性を信じてチャレンジする人を応援します。"
         ]
       },
       "details": {
-        "head": "地方創生から派生し、$1 年目",
-        "body": [
+        "primary": "地方創生から派生し、9 年目",
+        "secondary": [
           "かつては、10 期目を迎えた食品商社でしたが、",
           "国有化による事業・商権譲渡のため、システム部が独立しました。"
         ]
       },
       "business": {
-        "head": "事業内容",
-        "body": [
+        "primary": "事業内容",
+        "secondary": [
           {
-            "title": "WEB開発",
+            "title": "WEB 開発",
             "note": [
               ""
             ]
@@ -37,13 +41,13 @@
             ]
           },
           {
-            "title": "食品業界IT化",
+            "title": "食品業界 IT 化",
             "note": [
               ""
             ]
           },
           {
-            "title": "RPA開発",
+            "title": "RPA 開発",
             "note": [
               "Robotic Process Automation"
             ]
@@ -55,7 +59,7 @@
             ]
           },
           {
-            "title": "M&A",
+            "title": "M & A",
             "note": [
               "ブロックチェーン仲介実績あり"
             ]
@@ -68,34 +72,138 @@
           }
         ]
       },
-      "members": {
-        "head": "役員紹介",
-        "body": [
+      "team": {
+        "primary": "役員紹介",
+        "secondary": [
           {
-            "role": "CEO",
-            "name": "Shuhei Nomura",
+            "role": "CEO / Web developer",
+            "name": "SHŪHEI Nomura",
             "skill": [
-              "WEBAPP DEVELOP",
-              "UI/UX DESIGN",
-              "WORKSHOP FOR DEVELOPES",
-              "VIRTUAL YOUTUBER PRODUCE"
+              "ウェブアプリ・モバイルアプリ開発",
+              "UI / UX デザイン",
+              "開発初心者向け教材作成・勉強会など",
+              "バーチャルYouTuberプロデュース・支援活動"
             ]
           },
           {
-            "role": "CTO",
-            "name": "Yuuki Hamada",
+            "role": "CTO / Web & Game developer",
+            "name": "YUUKI Hamada",
             "skill": [
-              "WEBAPP DEVELOP",
-              "SOUND/MUSIC DESIGN",
-              "CASUAL GAME DEVELOP",
-              "HORROR CONTENT PRODUCE"
+              "ウェブアプリ・モバイルアプリ開発",
+              "サウンド・音楽制作",
+              "ゲーム開発",
+              "ホラーコンテンツ演出・ディレクション"
             ]
           },
           {
-            "role": "Chairperson",
-            "name": "Hidetaka Izawa",
-            "skill": []
+            "role": "CMO / Sales",
+            "name": "HIDETAKA Izawa",
+            "skill": [
+              "食品業界・水産業界の IT 化支援",
+              "BPO・ITO コンサルティング",
+              "東南アジアにおけるオフショア開発"
+            ]
           }
+        ]
+      },
+      "about": {
+        "head": "会社概要",
+        "body": {
+          "company": {
+            "primary": "e-sea 株式会社",
+            "secondary": [
+              "英文登記: E-SEA CORPORATION"
+            ]
+          },
+          "date": {
+            "primary": "設立",
+            "secondary": [
+              "2010 年 2 月"
+            ]
+          },
+          "money": {
+            "primary": "資本金",
+            "secondary": [
+              "300 万円"
+            ]
+          },
+          "offices": {
+            "sales": {
+              "primary": "営業部",
+              "secondary": [
+                "〒1600004",
+                "東京都新宿区四谷 1-18",
+                "オオノヤビル 8F GENZ Inc."
+              ]
+            },
+            "management": {
+              "primary": "請求管理部",
+              "secondary": [
+                "〒1700002",
+                "東京都豊島区巣鴨 3-21-16",
+                "グレースベルツリービル 5F 萩中央水産(株)"
+              ]
+            },
+            "randd": {
+              "primary": "R&D センター",
+              "secondary": [
+                "〒1750094",
+                "東京都板橋区成増 5-18-17-302"
+              ]
+            },
+            "hq": {
+              "primary": "本社",
+              "secondary": [
+                "〒7580011",
+                "山口県萩市椿東 6450-1",
+                "萩池々茶屋ビル 2F"
+              ]
+            }
+          }
+        }
+      },
+      "customers": {
+        "primary": "取引先実績",
+        "secondary": [
+          [
+            "石川中央魚市株式会社",
+            "中央魚類株式会社（築地マルナカ）",
+            "中部水産株式会社",
+            "広島うおいち株式会社",
+            "JF山口・山口県漁協共同組合"
+          ],
+          [
+            "VIDA 株式会社",
+            "ナレッジスイート株式会社",
+            "株式会社サインウェーブ",
+            "株式会社ナノ・メディア",
+            "株式会社アウスタ",
+            "アスタリスクシステムズ株式会社",
+            "株式会社ジランソフト（韓国）",
+            "ゾディアックアジア株式会社",
+            "株式会社オルトプラス",
+            "株式会社EAS（ベトナム）",
+            "株式会社サイバード"
+          ],
+          [
+            "株式会社アスキング",
+            "44マグナム・イベントスパースDAIA",
+            "アローサル・テクノロジー株式会社",
+            "他 多数"
+          ]
+        ]
+      },
+      "contact": {
+        "primary": "Contact",
+        "secondary": "伊澤までお問い合わせください。"
+      },
+      "footer": "Copyright ©︎{date} {company} All right reserved."
+    },
+    "error": {
+      "http404": {
+        "primary": "404",
+        "secondary": [
+          "Oh no's! We couldn't find that page :("
         ]
       }
     }
