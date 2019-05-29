@@ -117,6 +117,9 @@ typings/
 # next.js build output
 .next
 
+# Lock
+yarn.lock
+
 # ###### Vim ##########################
 
 # Swap
