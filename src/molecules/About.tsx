@@ -5,10 +5,10 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
+import hash from 'object-hash';
 import React from 'react';
 import Address from '~/atoms/Address';
-
-import IntlMessage, { About, Customers } from '~/intl';
+import IntlMessage, { Customers } from '~/intl';
 import { top } from '~/intl/messages';
 
 const intl = new IntlMessage();
@@ -31,7 +31,6 @@ const FC: React.FC = () => {
   const { title: aboutTitle, company, date, money, offices } = top.about;
   const { primary: customersTitle, secondary } = top.customers;
   const customers = intl.format(secondary) as Customers[];
-  console.log(customers);
 
   return (
     <Container className={classes.body} maxWidth={false}>
@@ -102,22 +101,22 @@ const FC: React.FC = () => {
         <List>
           {customers.map((group, index, self) => {
             const splitCount = 2;
+
             return (
-              <div>
+              <div key={hash(group)}>
                 {Array.from({ length: Math.ceil(group.length / 2) }, (v, i) =>
                   group.slice(i * splitCount, i * splitCount + splitCount)
-                ).map(line => {
-                  return (
-                    <ListItem>
-                      {line.map(item => (
-                        <ListItemText
-                          className={classes.column}
-                          primary={item}
-                        />
-                      ))}
-                    </ListItem>
-                  );
-                })}
+                ).map(line => (
+                  <ListItem key={hash(line)}>
+                    {line.map(item => (
+                      <ListItemText
+                        key={item}
+                        className={classes.column}
+                        primary={item}
+                      />
+                    ))}
+                  </ListItem>
+                ))}
                 {index !== self.length - 1 && (
                   <Divider variant="inset" component="li" />
                 )}

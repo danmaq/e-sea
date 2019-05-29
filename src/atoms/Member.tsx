@@ -39,13 +39,13 @@ const FC: React.FC<TeamMember> = ({ name, role, skill }: TeamMember) => {
       <ExpansionPanelDetails>
         <ul>
           {skill.map(value => (
-            <li>{value}</li>
+            <li key={value}>{value}</li>
           ))}
         </ul>
       </ExpansionPanelDetails>
     </ExpansionPanel>
   );
 };
-FC.displayName = 'Team';
+FC.displayName = 'Member';
 
 export default FC;
