@@ -14,7 +14,11 @@ const useStyles = makeStyles(() => ({
 const FC: React.FC = () => {
   const classes = useStyles();
 
-  return <Container className={classes.hero} maxWidth={false} />;
+  return (
+    <Container className={classes.hero} maxWidth={false}>
+      {''}
+    </Container>
+  );
 };
 FC.displayName = 'Divider';
 
