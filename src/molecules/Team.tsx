@@ -2,8 +2,8 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import Member from '~/atoms/Member';
+import hash from 'object-hash';
 import React from 'react';
-
 import IntlMessage, { Member as TeamMember } from '~/intl';
 import { top } from '~/intl/messages';
 
@@ -44,7 +44,9 @@ const FC: React.FC = () => {
         </Typography>
         {formattedBody.map(item => {
           const { name, role, skill } = item;
-          return <Member {...{ name, role, skill }} />;
+          return (
+            <Member key={hash(item)} name={name} role={role} skill={skill} />
+          );
         })}
       </Container>
     </Container>

@@ -1,5 +1,6 @@
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/styles';
+import hash from 'object-hash';
 import React from 'react';
 
 const useStyles = makeStyles(() => ({
@@ -22,12 +23,15 @@ export interface Props {
 
 const FC: React.FC<Props> = ({ address, caption }) => {
   const classes = useStyles();
-  const children = address.reduce<React.ReactNodeArray>(
-    (p, chunk) => [...p, chunk, <br />],
-    []
-  );
+  const children = address.reduce<React.ReactNodeArray>((p, chunk) => {
+    const key = hash(chunk);
 
-  // FIXME: Edge and IE11 are not supported flatmap.
+    return [
+      ...p,
+      <React.Fragment key={key}>chunk</React.Fragment>,
+      <br key={`${key}-br`} />
+    ];
+  }, []);
   return (
     <ListItemText
       className={classes.column}

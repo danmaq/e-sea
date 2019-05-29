@@ -1,6 +1,7 @@
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
+import hash from 'object-hash';
 import React from 'react';
 
 const useStyles = makeStyles(() => ({
@@ -22,9 +23,11 @@ export interface Props {
 
 const FC: React.FC<Props> = ({ caption, details }) => {
   const classes = useStyles();
-  const children = (Array.isArray(details) ? details : [details]).map(
-    detail => (
+  const children = (Array.isArray(details) ? details : [details])
+    .filter(detail => detail)
+    .map(detail => (
       <Typography
+        key={hash(detail)}
         variant="subtitle1"
         align="center"
         color="textPrimary"
@@ -32,8 +35,7 @@ const FC: React.FC<Props> = ({ caption, details }) => {
       >
         {detail}
       </Typography>
-    )
-  );
+    ));
 
   return (
     <Container className={classes.body} maxWidth={false}>
@@ -52,6 +54,6 @@ const FC: React.FC<Props> = ({ caption, details }) => {
     </Container>
   );
 };
-FC.displayName = 'Hero';
+FC.displayName = 'Copy';
 
 export default FC;
