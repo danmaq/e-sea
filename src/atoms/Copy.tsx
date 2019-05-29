@@ -23,8 +23,9 @@ export interface Props {
 
 const FC: React.FC<Props> = ({ caption, details = '' }) => {
   const classes = useStyles();
-  const children = (Array.isArray(details) ? details : [details]).map(
-    detail => (
+  const children = (Array.isArray(details) ? details : [details])
+    .filter(detail => detail)
+    .map(detail => (
       <Typography
         key={hash(detail)}
         variant="subtitle1"
@@ -34,8 +35,7 @@ const FC: React.FC<Props> = ({ caption, details = '' }) => {
       >
         {detail}
       </Typography>
-    )
-  );
+    ));
 
   return (
     <Container className={classes.body} maxWidth={false}>
@@ -54,6 +54,6 @@ const FC: React.FC<Props> = ({ caption, details = '' }) => {
     </Container>
   );
 };
-FC.displayName = 'Hero';
+FC.displayName = 'Copy';
 
 export default FC;

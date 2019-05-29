@@ -5,7 +5,12 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
+import hash from 'object-hash';
 import React from 'react';
+import IntlMessage, { Business } from '~/intl';
+import { top } from '~/intl/messages';
+
+const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
   body: {
@@ -18,6 +23,8 @@ const useStyles = makeStyles(() => ({
 
 const FC: React.FC = () => {
   const classes = useStyles();
+  const { primary, secondary } = top.business;
+  const formattedBody = intl.format(secondary) as Business[];
 
   return (
     <Container className={classes.body} maxWidth={false}>
@@ -29,49 +36,19 @@ const FC: React.FC = () => {
           color="textPrimary"
           gutterBottom
         >
-          事業内容
+          {intl.format(primary)}
         </Typography>
         <List>
-          <ListItem>
-            <ListItemText primary="WEB 開発" />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText primary="SES コンサルティング" />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText primary="農林水産業" secondary="農林水産省認可済" />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText primary="食品業界 IT 化" />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText
-              primary="RPA 開発"
-              secondary="Robotic Process Automation"
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText
-              primary="BPO"
-              secondary="Business Process Outsourcing"
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText
-              primary="M &amp; A"
-              secondary="ブロックチェーン仲介実績あり"
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem>
-            <ListItemText primary="コンテンツパブリッシング" />
-          </ListItem>
+          {formattedBody.map((item, index, self) => (
+            <div key={hash(item)}>
+              <ListItem>
+                <ListItemText primary={item.title} secondary={item.note} />
+              </ListItem>
+              {index !== self.length - 1 && (
+                <Divider variant="inset" component="li" />
+              )}
+            </div>
+          ))}
         </List>
       </Container>
     </Container>

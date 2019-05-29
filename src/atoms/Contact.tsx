@@ -3,6 +3,11 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 
+import IntlMessage from '~/intl';
+import { top } from '~/intl/messages';
+
+const intl = new IntlMessage();
+
 const useStyles = makeStyles(() => ({
   body: {
     background: 'linear-gradient(#DDDDDD, #EEEEEE)'
@@ -18,6 +23,7 @@ const useStyles = makeStyles(() => ({
 
 const FC: React.FC = () => {
   const classes = useStyles();
+  const { primary, secondary } = top.contact;
 
   return (
     <Container className={classes.body} maxWidth={false}>
@@ -29,7 +35,7 @@ const FC: React.FC = () => {
           color="textPrimary"
           gutterBottom
         >
-          Contact
+          {intl.format(primary)}
         </Typography>
         <Typography align="center" color="textPrimary" gutterBottom>
           <a
@@ -37,7 +43,7 @@ const FC: React.FC = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            伊澤まで、お気軽にお問い合わせください。
+            {intl.format(secondary)}
           </a>
         </Typography>
       </Container>

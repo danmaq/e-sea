@@ -3,8 +3,8 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
-import hash from 'object-hash';
 import React from 'react';
+import { Member as TeamMember } from '~/intl';
 
 const useStyles = makeStyles(() => ({
   body: {
@@ -28,21 +28,21 @@ export interface Props {
   skills: React.ReactNodeArray;
 }
 
-const FC: React.FC<Props> = ({ children, name, position, skills }) => {
+const FC: React.FC<TeamMember> = ({ name, role, skill }: TeamMember) => {
   const classes = useStyles();
-  const renderedSkills = skills.map(skill => (
-    <li key={hash(skill)}>{skill}</li>
-  ));
 
   return (
     <ExpansionPanel expanded>
       <ExpansionPanelSummary>
         <Typography className={classes.heading}>{name}</Typography>
-        <Typography className={classes.secondaryHeading}>{position}</Typography>
+        <Typography className={classes.secondaryHeading}>{role}</Typography>
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
-        {children}
-        <ul>{renderedSkills}</ul>
+        <ul>
+          {skill.map(value => (
+            <li key={value}>{value}</li>
+          ))}
+        </ul>
       </ExpansionPanelDetails>
     </ExpansionPanel>
   );
