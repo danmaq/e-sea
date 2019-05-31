@@ -10,7 +10,9 @@ const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
   hero: {
-    background: 'linear-gradient(#AA7788, #666666)',
+    backgroundImage: 'url("/images/background/sunset.jpg")',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     backgroundAttachment: 'fixed',
     maxHeight: '200vmin',
     minHeight: '50vmax',

@@ -21,18 +21,18 @@ const FC: React.FC = () => {
         caption={intl.format(overview.primary)}
         details={intl.format(overview.secondary)}
       />
-      <Divider />
+      <Divider image="bubbles.jpg" />
       <Copy
         caption={intl.format(details.primary)}
         details={intl.format(details.secondary)}
       />
-      <Divider />
+      <Divider image="surface.jpg" />
       <Business />
-      <Divider />
+      <Divider image="sky.jpg" />
       <Team />
-      <Divider />
+      <Divider image="ship.jpg" />
       <About />
-      <Divider />
+      <Divider image="sea.jpg" />
       <Contact />
       <footer>
         {intl.format(footer.body, {
