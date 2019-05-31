@@ -1,5 +1,14 @@
 import { defineMessages } from 'react-intl';
 
+export const meta = {
+  title: defineMessages({
+    body: { id: 'meta.title' }
+  }),
+  description: defineMessages({
+    body: { id: 'meta.description' }
+  })
+};
+
 export const top = {
   hero: defineMessages({
     body: { id: 'pages.top.hero' }
