@@ -28,7 +28,7 @@ const FC: React.FC<Props> = ({ address, caption }) => {
 
     return [
       ...p,
-      <React.Fragment key={key}>chunk</React.Fragment>,
+      <React.Fragment key={key}>{chunk}</React.Fragment>,
       <br key={`${key}-br`} />
     ];
   }, []);
