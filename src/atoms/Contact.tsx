@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const FC: React.FC = () => {
-  const classes = useStyles();
+  const classes = useStyles({});
   const { primary, secondary } = top.contact;
 
   return (

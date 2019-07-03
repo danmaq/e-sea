@@ -22,7 +22,7 @@ export interface Props {
 }
 
 const FC: React.FC<Props> = ({ address, caption }) => {
-  const classes = useStyles();
+  const classes = useStyles({});
   const children = address.reduce<React.ReactNodeArray>((p, chunk) => {
     const key = hash(chunk);
 

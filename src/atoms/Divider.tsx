@@ -15,7 +15,7 @@ interface Props {
 }
 
 const FC: React.FC<Props> = ({ image }) => {
-  const classes = useStyles();
+  const classes = useStyles({});
 
   return (
     <Container
