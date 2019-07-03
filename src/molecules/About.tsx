@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const FC: React.FC = () => {
-  const classes = useStyles();
+  const classes = useStyles({});
   const { title: aboutTitle, company, date, money, offices } = top.about;
   const { primary: customersTitle, secondary } = top.customers;
   const customers = intl.format(secondary) as Customers[];

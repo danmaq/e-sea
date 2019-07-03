@@ -28,7 +28,7 @@ export interface Props {
 }
 
 const FC: React.FC<TeamMember> = ({ name, role, skill }: TeamMember) => {
-  const classes = useStyles();
+  const classes = useStyles({});
 
   return (
     <ExpansionPanel expanded>

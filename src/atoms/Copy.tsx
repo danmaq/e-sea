@@ -22,7 +22,7 @@ export interface Props {
 }
 
 const FC: React.FC<Props> = ({ caption, details }) => {
-  const classes = useStyles();
+  const classes = useStyles({});
   const children = (Array.isArray(details) ? details : [details])
     .filter(detail => detail)
     .map(detail => (
