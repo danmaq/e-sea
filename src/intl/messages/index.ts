@@ -49,17 +49,9 @@ export const top = {
       secondary: { id: 'pages.top.about.body.money.secondary' }
     }),
     offices: {
-      sales: defineMessages({
-        primary: { id: 'pages.top.about.body.offices.sales.primary' },
-        secondary: { id: 'pages.top.about.body.offices.sales.secondary' }
-      }),
       management: defineMessages({
         primary: { id: 'pages.top.about.body.offices.management.primary' },
         secondary: { id: 'pages.top.about.body.offices.management.secondary' }
-      }),
-      randd: defineMessages({
-        primary: { id: 'pages.top.about.body.offices.randd.primary' },
-        secondary: { id: 'pages.top.about.body.offices.randd.secondary' }
       }),
       hq: defineMessages({
         primary: { id: 'pages.top.about.body.offices.hq.primary' },

@@ -5,10 +5,7 @@
   },
   "pages": {
     "top": {
-      "hero": [
-        "FOR TOMO",
-        "RROW FUN"
-      ],
+      "hero": ["FOR TOMO", "RROW FUN"],
       "overview": {
         "primary": "Take it, Easy.",
         "secondary": [
@@ -28,51 +25,39 @@
         "secondary": [
           {
             "title": "WEB 開発",
-            "note": [
-              ""
-            ]
+            "note": [""]
           },
           {
             "title": "SESコンサルティング",
-            "note": [
-              ""
-            ]
+            "note": [""]
           },
           {
             "title": "農林水産業",
-            "note": [
-              "農林水産省認可済"
-            ]
+            "note": ["農林水産省認可済"]
           },
           {
             "title": "食品業界 IT 化",
-            "note": [
-              ""
-            ]
+            "note": [""]
           },
           {
             "title": "RPA 開発",
-            "note": [
-              "Robotic Process Automation"
-            ]
+            "note": ["Robotic Process Automation"]
           },
           {
             "title": "BPO",
-            "note": [
-              "Business Process Outsourcing"
-            ]
+            "note": ["Business Process Outsourcing"]
           },
           {
             "title": "M & A",
-            "note": [
-              "ブロックチェーン仲介実績あり"
-            ]
+            "note": ["ブロックチェーン仲介実績あり"]
           },
           {
             "title": "コンテンツパブリッシング",
-            "note": [
-              ""
-            ]
+            "note": [""]
+          },
+          {
+            "title": "太陽光発電 投資アドバイザー",
+            "note": [""]
           }
         ]
       },
@@ -84,9 +69,8 @@
             "name": "SHŪHEI Nomura",
             "skill": [
               "ウェブアプリ・モバイルアプリ開発",
-              "UI / UX デザイン",
               "開発初心者向け教材作成・勉強会など",
-              "バーチャルYouTuberプロデュース・支援活動"
+              "太陽光発電 投資アドバイザー"
             ]
           },
           {
@@ -115,44 +99,23 @@
         "body": {
           "company": {
             "primary": "e-sea 株式会社",
-            "secondary": [
-              "英文登記: E-SEA CORPORATION"
-            ]
+            "secondary": ["英文登記: E-SEA CORPORATION"]
           },
           "date": {
             "primary": "設立",
-            "secondary": [
-              "2010 年 2 月"
-            ]
+            "secondary": ["2010 年 2 月"]
           },
           "money": {
             "primary": "資本金",
-            "secondary": [
-              "300 万円"
-            ]
+            "secondary": ["300 万円"]
           },
           "offices": {
-            "sales": {
-              "primary": "営業部",
-              "secondary": [
-                "〒1600004",
-                "東京都新宿区四谷 1-18",
-                "オオノヤビル 8F GENZ Inc."
-              ]
-            },
             "management": {
               "primary": "請求管理部",
               "secondary": [
                 "〒1700002",
                 "東京都豊島区巣鴨 3-21-16",
                 "グレースベルツリービル 5F 萩中央水産(株)"
-              ]
-            },
-            "randd": {
-              "primary": "R&D センター",
-              "secondary": [
-                "〒1750094",
-                "東京都板橋区成増 5-18-17-302"
               ]
             },
             "hq": {
@@ -205,9 +168,7 @@
     "error": {
       "http404": {
         "primary": "404",
-        "secondary": [
-          "Oh no's! We couldn't find that page :("
-        ]
+        "secondary": ["Oh no's! We couldn't find that page :("]
       }
     }
   }

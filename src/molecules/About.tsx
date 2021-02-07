@@ -68,20 +68,12 @@ const FC: React.FC = () => {
           <Divider variant="inset" component="li" />
           <ListItem>
             <Address
-              caption={intl.format(offices.sales.primary)}
-              address={intl.format(offices.sales.secondary) as string[]}
-            />
-            <Address
               caption={intl.format(offices.management.primary)}
               address={intl.format(offices.management.secondary) as string[]}
             />
           </ListItem>
           <Divider variant="inset" component="li" />
           <ListItem>
-            <Address
-              caption={intl.format(offices.randd.primary)}
-              address={intl.format(offices.randd.secondary) as string[]}
-            />
             <Address
               caption={intl.format(offices.hq.primary)}
               address={intl.format(offices.hq.secondary) as string[]}
