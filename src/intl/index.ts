@@ -45,7 +45,6 @@ type Format = Primaries | Secondaries;
 
 const toLocalMessages = (json: JSON): LocalMessages => {
   const result: LocalMessages = flatten(json, { safe: true });
-  console.log({ result });
   return result;
 };
 
