@@ -1,6 +1,6 @@
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
@@ -31,19 +31,19 @@ const FC: React.FC<TeamMember> = ({ name, role, skill }: TeamMember) => {
   const classes = useStyles({});
 
   return (
-    <ExpansionPanel expanded>
-      <ExpansionPanelSummary>
+    <Accordion expanded>
+      <AccordionSummary>
         <Typography className={classes.heading}>{name}</Typography>
         <Typography className={classes.secondaryHeading}>{role}</Typography>
-      </ExpansionPanelSummary>
-      <ExpansionPanelDetails>
+      </AccordionSummary>
+      <AccordionDetails>
         <ul>
           {skill.map(value => (
             <li key={value}>{value}</li>
           ))}
         </ul>
-      </ExpansionPanelDetails>
-    </ExpansionPanel>
+      </AccordionDetails>
+    </Accordion>
   );
 };
 FC.displayName = 'Member';
