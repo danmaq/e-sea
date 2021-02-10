@@ -9,7 +9,7 @@ import React from 'react';
  */
 
 /** @type {React.FC<React.PropsWithChildren<IProps>>} */
-const FC = ({ Body, children, Head }) => ((
+const FC = ({ Body, children, Head }) => (
   <html lang="ja">
     <Head>
       <meta charSet="UTF-8" />
@@ -29,7 +29,7 @@ const FC = ({ Body, children, Head }) => ((
     </Head>
     <Body>{children}</Body>
   </html>
-));
+);
 FC.displayName = 'Root';
 
 export default FC;
