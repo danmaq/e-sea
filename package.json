@@ -26,7 +26,8 @@
     "serve": "serve dist -p 3000 -s"
   },
   "engines": {
-    "node": ">= 15.8"
+    "node": "^16.9.0",
+    "npm": "^7.23.0"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
