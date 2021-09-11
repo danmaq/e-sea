@@ -20,6 +20,7 @@
     "paths": {
       "~/*": ["src/*"]
     },
+    "plugins": [{ "name": "typescript-eslint-language-service" }],
     "preserveConstEnums": true,
     "resolveJsonModule": true,
     "sourceMap": true,
