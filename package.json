@@ -2,32 +2,21 @@
   "name": "e-sea",
   "version": "0.1.0",
   "description": "E-SEA official site",
-  "license": "Apache-2.0",
-  "private": true,
-  "author": "danmaq",
   "keywords": [
     "website"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danmaq/e-sea.git"
-  },
-  "bugs": {
-    "url": "https://github.com/danmaq/e-sea/issues"
-  },
-  "homepage": "https://github.com/danmaq/e-sea#readme",
+  "homepage": "https://www.e-sea.blue",
+  "bugs": "https://github.com/danmaq/e-sea/issues",
+  "license": "Apache-2.0",
+  "author": "danmaq <info@danmaq.com> (http://danmaq.com/)",
+  "repository": "github:danmaq/e-sea",
   "scripts": {
-    "start": "react-static start",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:stage": "react-static build --staging",
     "build": "react-static build",
+    "build:stage": "react-static build --staging",
     "bundle": "react-static bundle",
     "export": "react-static export",
-    "serve": "serve dist -p 3000 -s"
-  },
-  "engines": {
-    "node": "^16.9.0",
-    "npm": "^7.23.0"
+    "serve": "serve dist -p 3000 -s",
+    "start": "react-static start"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
@@ -72,5 +61,10 @@
     "prettier": "^1.19.1",
     "serve": "^11.3.2",
     "typescript": "^3.5.3"
-  }
+  },
+  "engines": {
+    "node": "^16.9.0",
+    "npm": "^7.23.0"
+  },
+  "private": true
 }
