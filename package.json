@@ -15,6 +15,7 @@
     "build:stage": "react-static build --staging",
     "bundle": "react-static bundle",
     "export": "react-static export",
+    "prepare": "husky install",
     "serve": "serve dist -p 3000 -s",
     "start": "react-static start"
   },
@@ -58,6 +59,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^7.0.2",
     "prettier": "^1.19.1",
     "serve": "^11.3.2",
     "typescript": "^3.5.3"
