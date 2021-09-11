@@ -96,7 +96,7 @@ const FC: React.FC = () => {
 
             return (
               <div key={hash(group)}>
-                {Array.from({ length: Math.ceil(group.length / 2) }, (v, i) =>
+                {Array.from({ length: Math.ceil(group.length / 2) }, (__, i) =>
                   group.slice(i * splitCount, i * splitCount + splitCount)
                 ).map(line => (
                   <ListItem key={hash(line)}>

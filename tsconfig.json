@@ -1,21 +1,29 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "baseUrl": ".",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "preserve",
     "lib": ["dom", "esnext.array"],
-    "module": "esnext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "noEmit": true,
-    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "paths": {
       "~/*": ["src/*"]
     },
     "preserveConstEnums": true,
-    "pretty": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
+    "strict": true,
     "target": "esnext"
   },
   "exclude": ["artifacts/**/*", "dist/**/*", "public/**/*", "node_modules/**/*"]
