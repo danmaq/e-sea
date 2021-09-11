@@ -36,3 +36,10 @@ npm run serve
 ### 本番への配置
 
 本番ページは Netlify 上で運用しています。このリポジトリの `master` ブランチへマージすることで、連動して自動的にビルド及び配置を行います。
+
+## その他の注意
+
+- コミット時におけるコミット メッセージの Linter を導入しています。
+  ルールとして暫定的に
+  **[Conventional Commits](https://www.conventionalcommits.org/ja/)**
+  を適用しており、規約に反するメッセージのコミットを弾きます。

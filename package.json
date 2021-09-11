@@ -37,6 +37,8 @@
     "react-static-plugin-typescript": "^7.5.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@types/flat": "^0.0.28",
     "@types/material-ui": "^0.21.8",
     "@types/node": "^12.19.16",
