@@ -8,22 +8,16 @@ import { makeStyles } from '@material-ui/styles';
 import hash from 'object-hash';
 import React from 'react';
 import Address from '~/atoms/Address';
-import IntlMessage, { Customers } from '~/intl';
+import type { Customers } from '~/intl';
+import IntlMessage from '~/intl';
 import { top } from '~/intl/messages';
 
 const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
-  body: {
-    background: 'linear-gradient(#DDDDDD, #EEEEEE)'
-  },
-  inner: {
-    padding: '10vw 0vw'
-  },
-  column: {
-    flexBasis: '50%',
-    flexShrink: 0
-  }
+  body: { background: 'linear-gradient(#DDDDDD, #EEEEEE)' },
+  inner: { padding: '10vw 0vw' },
+  column: { flexBasis: '50%', flexShrink: 0 },
 }));
 
 const FC: React.FC = () => {
@@ -98,9 +92,9 @@ const FC: React.FC = () => {
               <div key={hash(group)}>
                 {Array.from({ length: Math.ceil(group.length / 2) }, (__, i) =>
                   group.slice(i * splitCount, i * splitCount + splitCount)
-                ).map(line => (
+                ).map((line) => (
                   <ListItem key={hash(line)}>
-                    {line.map(item => (
+                    {line.map((item) => (
                       <ListItemText
                         key={item}
                         className={classes.column}

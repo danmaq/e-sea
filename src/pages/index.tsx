@@ -37,7 +37,7 @@ const FC: React.FC = () => {
       <footer>
         {intl.format(footer.body, {
           date: '︎2010-2019',
-          company: 'E-SEA CORPORATION'
+          company: 'E-SEA CORPORATION',
         })}
       </footer>
     </main>

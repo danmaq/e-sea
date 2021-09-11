@@ -1,6 +1,7 @@
 import { addLocaleData, IntlProvider } from 'react-intl';
 import * as ja from 'react-intl/locale-data/ja';
 import { flatten } from 'flat';
+import jaJson from '~/intl/locales/ja.json';
 
 addLocaleData([...ja]);
 
@@ -43,36 +44,41 @@ type Primaries = string;
 type Secondaries = string[] | Business[] | Member[] | About | Customers[];
 type Format = Primaries | Secondaries;
 
-const toLocalMessages = (json: JSON): LocalMessages => {
+const toLocalMessages = (json: unknown): LocalMessages => {
   const result: LocalMessages = flatten(json, { safe: true });
   return result;
 };
 
 export const locales: Locales = {
-  ja: toLocalMessages(require('~/intl/locales/ja.json'))
+  ja: toLocalMessages(jaJson),
 };
 
 export default class IntlMessage {
   protected intl: ReactIntl.InjectedIntl;
+
   public constructor(locale?: string) {
     this.intl = this.makeIntlInstance(locale || this.getDefaultLanguage());
   }
+
   protected makeIntlInstance(locale: string): ReactIntl.InjectedIntl {
     return new IntlProvider({
       locale,
-      messages: locales[locale]
+      messages: locales[locale],
     }).getChildContext().intl;
   }
+
   public format(
     messageDescriptor: ReactIntl.FormattedMessage.MessageDescriptor,
     values?: LocalMessages
   ): Format {
     return this.intl.formatMessage.bind(this.intl)(messageDescriptor, values);
   }
-  public setLanguage(locale: string) {
+
+  public setLanguage(locale: string): void {
     this.intl = this.makeIntlInstance(locale);
   }
-  public getDefaultLanguage() {
+
+  public getDefaultLanguage(): string {
     return 'ja';
   }
 }

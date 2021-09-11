@@ -8,12 +8,9 @@ const useStyles = makeStyles(() => ({
   body: {
     background: 'linear-gradient(#DDDDDD, #EEEEEE)',
     display: 'table',
-    height: '66vh'
+    height: '66vh',
   },
-  inner: {
-    display: 'table-cell',
-    verticalAlign: 'middle'
-  }
+  inner: { display: 'table-cell', verticalAlign: 'middle' },
 }));
 
 export interface Props {
@@ -24,8 +21,8 @@ export interface Props {
 const FC: React.FC<Props> = ({ caption, details }) => {
   const classes = useStyles({});
   const children = (Array.isArray(details) ? details : [details])
-    .filter(detail => detail)
-    .map(detail => (
+    .filter((detail) => detail)
+    .map((detail) => (
       <Typography
         key={hash(detail)}
         variant="subtitle1"

@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 
-import axios from 'axios';
 import path from 'path';
+import axios from 'axios';
 import Root from './src/templates/Root';
 
 // Typescript support in static.config.js is not yet supported, but is coming in a future update!
@@ -25,14 +25,14 @@ const config = {
       {
         path: '/blog',
         getData: () => ({ posts }),
-        children: posts.map(post => ({
+        children: posts.map((post) => ({
           getData: () => ({ post }),
           path: `/post/${post.id}`,
           replace: false,
-          template: 'src/containers/Post'
+          template: 'src/containers/Post',
         })),
-        replace: false
-      }
+        replace: false,
+      },
     ];
     return route;
   },
@@ -40,11 +40,11 @@ const config = {
     'react-static-plugin-typescript',
     [
       require.resolve('react-static-plugin-source-filesystem'),
-      { location: path.resolve('./src/pages') }
+      { location: path.resolve('./src/pages') },
     ],
     require.resolve('react-static-plugin-reach-router'),
-    require.resolve('react-static-plugin-sitemap')
-  ]
+    require.resolve('react-static-plugin-sitemap'),
+  ],
 };
 
 export default config;

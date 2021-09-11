@@ -4,16 +4,9 @@ import hash from 'object-hash';
 import React from 'react';
 
 const useStyles = makeStyles(() => ({
-  body: {
-    background: 'linear-gradient(#DDDDDD, #EEEEEE)'
-  },
-  inner: {
-    padding: '10vw 0vw'
-  },
-  column: {
-    flexBasis: '50%',
-    flexShrink: 0
-  }
+  body: { background: 'linear-gradient(#DDDDDD, #EEEEEE)' },
+  inner: { padding: '10vw 0vw' },
+  column: { flexBasis: '50%', flexShrink: 0 },
 }));
 
 export interface Props {
@@ -29,7 +22,7 @@ const FC: React.FC<Props> = ({ address, caption }) => {
     return [
       ...p,
       <React.Fragment key={key}>{chunk}</React.Fragment>,
-      <br key={`${key}-br`} />
+      <br key={`${key}-br`} />,
     ];
   }, []);
   return (

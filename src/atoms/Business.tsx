@@ -7,18 +7,15 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import hash from 'object-hash';
 import React from 'react';
-import IntlMessage, { Business } from '~/intl';
+import type { Business } from '~/intl';
+import IntlMessage from '~/intl';
 import { top } from '~/intl/messages';
 
 const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
-  body: {
-    background: 'linear-gradient(#DDDDDD, #EEEEEE)'
-  },
-  inner: {
-    padding: '10vw 0vw'
-  }
+  body: { background: 'linear-gradient(#DDDDDD, #EEEEEE)' },
+  inner: { padding: '10vw 0vw' },
 }));
 
 const FC: React.FC = () => {

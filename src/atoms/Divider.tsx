@@ -3,11 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 
 const useStyles = makeStyles(() => ({
-  hero: {
-    backgroundAttachment: 'fixed',
-    height: '90vh',
-    position: 'relative'
-  }
+  hero: { backgroundAttachment: 'fixed', height: '90vh', position: 'relative' },
 }));
 
 interface Props {
@@ -26,7 +22,7 @@ const FC: React.FC<Props> = ({ image }) => {
           ? {
               backgroundImage: `url(/images/background/${image})`,
               backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover'
+              backgroundSize: 'cover',
             }
           : { background: 'linear-gradient(#334455, #8899AA)' }
       }

@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
     maxHeight: '200vmin',
     minHeight: '50vmax',
     height: '100vh',
-    position: 'relative'
+    position: 'relative',
   },
   heroText: {
     bottom: '10vh',
@@ -30,8 +30,8 @@ const useStyles = makeStyles(() => ({
     position: 'absolute',
     right: '3vw',
     textAlign: 'right',
-    wordBreak: 'break-all'
-  }
+    wordBreak: 'break-all',
+  },
 }));
 
 const FC: React.FC = () => {
