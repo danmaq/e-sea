@@ -62,7 +62,7 @@
         ]
       },
       "team": {
-        "primary": "役員紹介",
+        "primary": "社員・役員紹介",
         "secondary": [
           {
             "role": "CEO / Web developer",
@@ -91,6 +91,20 @@
               "BPO・ITO コンサルティング",
               "東南アジアにおけるオフショア開発"
             ]
+          },
+          {
+            "role": "CFO / General manager",
+            "name": "SATSUKI Inoue",
+            "skill": [
+              "財務会計責任者",
+              "元経済産業省関連団体",
+              "水産業と食品業界を主とした、事業開発・投資支援"
+            ]
+          },
+          {
+            "role": "Sales manager",
+            "name": "JUNYA Suemasu",
+            "skill": []
           }
         ]
       },
@@ -110,6 +124,25 @@
             "secondary": ["300 万円"]
           },
           "offices": {
+            "cambodia": {
+              "primary": "カンボジアオフィス",
+              "secondary": [
+                "Building 146,",
+                "st110, tuek laak 1, Toul kork, phnom penh"
+              ]
+            },
+            "factory": {
+              "primary": "第1工場 Marine Park Hagi 萩市 道の駅店",
+              "secondary": ["〒7580011", "山口県萩市椿東前小畑2区4216"]
+            },
+            "hq": {
+              "primary": "本社",
+              "secondary": [
+                "〒7580011",
+                "山口県萩市椿東 6450-1",
+                "萩池々茶屋ビル 2F"
+              ]
+            },
             "management": {
               "primary": "請求管理部",
               "secondary": [
@@ -118,12 +151,20 @@
                 "グレースベルツリービル 5F 萩中央水産(株)"
               ]
             },
-            "hq": {
-              "primary": "本社",
+            "sales": {
+              "primary": "営業部",
               "secondary": [
-                "〒7580011",
-                "山口県萩市椿東 6450-1",
-                "萩池々茶屋ビル 2F"
+                "〒1600007",
+                "東京都新宿区荒木町5-4",
+                "クサフカビル5F"
+              ]
+            },
+            "vietnam": {
+              "primary": "ベトナムオフィス",
+              "secondary": [
+                "75 C18 Street,",
+                "Ward 12.Tan Binh,",
+                "Ho Chi Minh,Vietnam"
               ]
             }
           }

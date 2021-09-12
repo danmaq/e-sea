@@ -39,13 +39,29 @@ export const top = {
       secondary: { id: 'pages.top.about.body.money.secondary' },
     }),
     offices: {
-      management: defineMessages({
-        primary: { id: 'pages.top.about.body.offices.management.primary' },
-        secondary: { id: 'pages.top.about.body.offices.management.secondary' },
+      cambodia: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.cambodia.primary' },
+        secondary: { id: 'pages.top.about.body.offices.cambodia.secondary' },
+      }),
+      factory: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.factory.primary' },
+        secondary: { id: 'pages.top.about.body.offices.factory.secondary' },
       }),
       hq: defineMessages({
         primary: { id: 'pages.top.about.body.offices.hq.primary' },
         secondary: { id: 'pages.top.about.body.offices.hq.secondary' },
+      }),
+      management: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.management.primary' },
+        secondary: { id: 'pages.top.about.body.offices.management.secondary' },
+      }),
+      sales: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.sales.primary' },
+        secondary: { id: 'pages.top.about.body.offices.sales.secondary' },
+      }),
+      vietnam: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.vietnam.primary' },
+        secondary: { id: 'pages.top.about.body.offices.vietnam.secondary' },
       }),
     },
   },
