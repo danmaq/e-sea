@@ -1,6 +1,5 @@
 import ListItemText from '@material-ui/core/ListItemText';
-import { makeStyles } from '@material-ui/styles';
-import hash from 'object-hash';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 
 const useStyles = makeStyles(() => ({
@@ -16,15 +15,14 @@ export interface Props {
 
 const FC: React.FC<Props> = ({ address, caption }) => {
   const classes = useStyles({});
-  const children = address.reduce<React.ReactNodeArray>((p, chunk) => {
-    const key = hash(chunk);
-
-    return [
+  const children = address.reduce<React.ReactNodeArray>(
+    (p, chunk, index) => [
       ...p,
-      <React.Fragment key={key}>{chunk}</React.Fragment>,
-      <br key={`${key}-br`} />,
-    ];
-  }, []);
+      <React.Fragment key={index}>{chunk}</React.Fragment>,
+      <br key={`${index}-br`} />,
+    ],
+    []
+  );
   return (
     <ListItemText
       className={classes.column}

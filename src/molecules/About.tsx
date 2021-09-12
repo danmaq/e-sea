@@ -4,8 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
-import hash from 'object-hash';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import Address from '~/atoms/Address';
 import type { Customers } from '~/intl';
@@ -89,11 +88,11 @@ const FC: React.FC = () => {
             const splitCount = 2;
 
             return (
-              <div key={hash(group)}>
+              <div key={index}>
                 {Array.from({ length: Math.ceil(group.length / 2) }, (__, i) =>
                   group.slice(i * splitCount, i * splitCount + splitCount)
-                ).map((line) => (
-                  <ListItem key={hash(line)}>
+                ).map((line, i) => (
+                  <ListItem key={i}>
                     {line.map((item) => (
                       <ListItemText
                         key={item}

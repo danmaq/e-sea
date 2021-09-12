@@ -4,8 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
-import hash from 'object-hash';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import type { Business } from '~/intl';
 import IntlMessage from '~/intl';
@@ -37,7 +36,7 @@ const FC: React.FC = () => {
         </Typography>
         <List>
           {formattedBody.map((item, index, self) => (
-            <div key={hash(item)}>
+            <div key={index}>
               <ListItem>
                 <ListItemText primary={item.title} secondary={item.note} />
               </ListItem>
