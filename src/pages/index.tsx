@@ -11,6 +11,8 @@ import IntlMessage from '~/intl';
 import { top } from '~/intl/messages';
 
 const intl = new IntlMessage();
+const year = new Date().getFullYear();
+const elapsed = year - 2010;
 
 const FC: React.FC = () => {
   const { overview, details, footer } = top;
@@ -23,7 +25,7 @@ const FC: React.FC = () => {
       />
       <Divider image="bubbles.jpg" />
       <Copy
-        caption={intl.format(details.primary)}
+        caption={intl.format(details.primary, { year: elapsed })}
         details={intl.format(details.secondary)}
       />
       <Divider image="surface.jpg" />
@@ -36,7 +38,7 @@ const FC: React.FC = () => {
       <Contact />
       <Footer>
         {intl.format(footer.body, {
-          date: '︎2010-2019',
+          date: `︎2010-${year}`,
           company: 'E-SEA CORPORATION',
         })}
       </Footer>
