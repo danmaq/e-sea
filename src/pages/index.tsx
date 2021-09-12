@@ -2,11 +2,11 @@ import React from 'react';
 import Business from '~/atoms/Business';
 import Contact from '~/atoms/Contact';
 import Copy from '~/atoms/Copy';
+import { Footer } from '~/atoms/Footer';
 import Hero from '~/atoms/Hero';
 import Divider from '~/atoms/Divider';
 import About from '~/molecules/About';
 import Team from '~/molecules/Team';
-
 import IntlMessage from '~/intl';
 import { top } from '~/intl/messages';
 
@@ -34,12 +34,12 @@ const FC: React.FC = () => {
       <About />
       <Divider image="sea.jpg" />
       <Contact />
-      <footer>
+      <Footer>
         {intl.format(footer.body, {
           date: '︎2010-2019',
           company: 'E-SEA CORPORATION',
         })}
-      </footer>
+      </Footer>
     </main>
   );
 };
