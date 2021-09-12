@@ -64,12 +64,31 @@ const FC: React.FC = () => {
               caption={intl.format(offices.management.primary)}
               address={intl.format(offices.management.secondary) as string[]}
             />
+            <Address
+              caption={intl.format(offices.hq.primary)}
+              address={intl.format(offices.hq.secondary) as string[]}
+            />
           </ListItem>
           <Divider variant="inset" component="li" />
           <ListItem>
             <Address
-              caption={intl.format(offices.hq.primary)}
-              address={intl.format(offices.hq.secondary) as string[]}
+              caption={intl.format(offices.sales.primary)}
+              address={intl.format(offices.sales.secondary) as string[]}
+            />
+            <Address
+              caption={intl.format(offices.factory.primary)}
+              address={intl.format(offices.factory.secondary) as string[]}
+            />
+          </ListItem>
+          <Divider variant="inset" component="li" />
+          <ListItem>
+            <Address
+              caption={intl.format(offices.vietnam.primary)}
+              address={intl.format(offices.vietnam.secondary) as string[]}
+            />
+            <Address
+              caption={intl.format(offices.cambodia.primary)}
+              address={intl.format(offices.cambodia.secondary) as string[]}
             />
           </ListItem>
         </List>
