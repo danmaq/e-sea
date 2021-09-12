@@ -1,38 +1,47 @@
 import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/styles';
+import type { Theme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 
-const useStyles = makeStyles(() => ({
-  hero: {
-    backgroundAttachment: 'fixed',
-    height: '90vh',
-    position: 'relative'
-  }
+const useStyles = makeStyles<Theme, Props>(() => ({
+  base: { height: '70vh' },
+  bg: ({ image }) => ({
+    display: 'block',
+    position: 'sticky',
+    top: 0,
+    zIndex: -1,
+    height: 0,
+    maxHeight: 0,
+    overflow: 'visible',
+    '&::after': {
+      backgroundImage: `url(/images/background/${image})`,
+      content: '""',
+      position: 'absolute',
+      display: 'block',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100vh',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+    },
+  }),
 }));
 
 interface Props {
-  image?: string;
+  image: string;
 }
 
 const FC: React.FC<Props> = ({ image }) => {
-  const classes = useStyles({});
-
+  const { base, bg } = useStyles({ image });
   return (
-    <Container
-      className={classes.hero}
-      maxWidth={false}
-      style={
-        image
-          ? {
-              backgroundImage: `url(/images/background/${image})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover'
-            }
-          : { background: 'linear-gradient(#334455, #8899AA)' }
-      }
-    >
-      {''}
-    </Container>
+    <>
+      <div className={bg} />
+      <Container className={base} maxWidth={false}>
+        {''}
+      </Container>
+    </>
   );
 };
 FC.displayName = 'Divider';

@@ -1,6 +1,6 @@
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 
 import IntlMessage from '~/intl';
@@ -9,16 +9,9 @@ import { top } from '~/intl/messages';
 const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
-  body: {
-    background: 'linear-gradient(#DDDDDD, #EEEEEE)'
-  },
-  inner: {
-    padding: '10vw 0vw'
-  },
-  column: {
-    flexBasis: '50%',
-    flexShrink: 0
-  }
+  body: { background: 'linear-gradient(#DDDDDD, #EEEEEE)' },
+  inner: { padding: '10vw 0vw' },
+  column: { flexBasis: '50%', flexShrink: 0 },
 }));
 
 const FC: React.FC = () => {

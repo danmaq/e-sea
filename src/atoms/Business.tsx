@@ -4,21 +4,17 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
-import hash from 'object-hash';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
-import IntlMessage, { Business } from '~/intl';
+import type { Business } from '~/intl';
+import IntlMessage from '~/intl';
 import { top } from '~/intl/messages';
 
 const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
-  body: {
-    background: 'linear-gradient(#DDDDDD, #EEEEEE)'
-  },
-  inner: {
-    padding: '10vw 0vw'
-  }
+  body: { background: 'linear-gradient(#DDDDDD, #EEEEEE)' },
+  inner: { padding: '10vw 0vw' },
 }));
 
 const FC: React.FC = () => {
@@ -40,7 +36,7 @@ const FC: React.FC = () => {
         </Typography>
         <List>
           {formattedBody.map((item, index, self) => (
-            <div key={hash(item)}>
+            <div key={index}>
               <ListItem>
                 <ListItemText primary={item.title} secondary={item.note} />
               </ListItem>

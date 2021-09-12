@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render as domRender, hydrate } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 // Your top level component
@@ -12,9 +12,7 @@ export default App;
 if (typeof document !== 'undefined') {
   const target = document.getElementById('root');
 
-  const renderMethod = target.hasChildNodes()
-    ? ReactDOM.hydrate
-    : ReactDOM.render;
+  const renderMethod = target?.hasChildNodes() ? hydrate : domRender;
 
   const render = (Component: React.FC) => {
     renderMethod(

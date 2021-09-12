@@ -8,9 +8,11 @@ const FC: React.FC = () => (
   <Root>
     <Helmet />
     <CssBaseline />
-    <Router>
-      <Routes path="*" />
-    </Router>
+    <React.Suspense fallback={<em>Loading...</em>}>
+      <Router>
+        <Routes path="*" />
+      </Router>
+    </React.Suspense>
   </Root>
 );
 FC.displayName = 'App';

@@ -1,28 +1,19 @@
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
-import Member from '~/atoms/Member';
-import hash from 'object-hash';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
-import IntlMessage, { Member as TeamMember } from '~/intl';
+import Member from '~/atoms/Member';
+import type { Member as TeamMember } from '~/intl';
+import IntlMessage from '~/intl';
 import { top } from '~/intl/messages';
 
 const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
-  body: {
-    background: 'linear-gradient(#DDDDDD, #EEEEEE)'
-  },
-  inner: {
-    padding: '10vw 0vw'
-  },
-  heading: {
-    flexBasis: '33.33%',
-    flexShrink: 0
-  },
-  secondaryHeading: {
-    color: '#AAAAAA'
-  }
+  body: { background: 'linear-gradient(#DDDDDD, #EEEEEE)' },
+  inner: { padding: '10vw 0vw' },
+  heading: { flexBasis: '33.33%', flexShrink: 0 },
+  secondaryHeading: { color: '#AAAAAA' },
 }));
 
 const FC: React.FC = () => {
@@ -42,12 +33,9 @@ const FC: React.FC = () => {
         >
           {intl.format(primary)}
         </Typography>
-        {formattedBody.map(item => {
-          const { name, role, skill } = item;
-          return (
-            <Member key={hash(item)} name={name} role={role} skill={skill} />
-          );
-        })}
+        {formattedBody.map(({ name, role, skill }, index) => (
+          <Member key={index} name={name} role={role} skill={skill} />
+        ))}
       </Container>
     </Container>
   );

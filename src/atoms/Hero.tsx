@@ -1,6 +1,6 @@
 import Container from '@material-ui/core/Container';
+import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 
 import IntlMessage from '~/intl';
@@ -10,14 +10,23 @@ const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
   hero: {
-    backgroundImage: 'url("/images/background/sunset.jpg")',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundAttachment: 'fixed',
     maxHeight: '200vmin',
     minHeight: '50vmax',
     height: '100vh',
-    position: 'relative'
+    position: 'relative',
+    '&::before': {
+      backgroundImage: 'url("/images/background/sunset.jpg")',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      content: '""',
+      display: 'block',
+      height: '100vh',
+      left: 0,
+      position: 'fixed',
+      top: 0,
+      width: '100%',
+      zIndex: -5,
+    },
   },
   heroText: {
     bottom: '10vh',
@@ -30,8 +39,8 @@ const useStyles = makeStyles(() => ({
     position: 'absolute',
     right: '3vw',
     textAlign: 'right',
-    wordBreak: 'break-all'
-  }
+    wordBreak: 'break-all',
+  },
 }));
 
 const FC: React.FC = () => {

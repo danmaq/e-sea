@@ -4,26 +4,19 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
-import hash from 'object-hash';
+import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import Address from '~/atoms/Address';
-import IntlMessage, { Customers } from '~/intl';
+import type { Customers } from '~/intl';
+import IntlMessage from '~/intl';
 import { top } from '~/intl/messages';
 
 const intl = new IntlMessage();
 
 const useStyles = makeStyles(() => ({
-  body: {
-    background: 'linear-gradient(#DDDDDD, #EEEEEE)'
-  },
-  inner: {
-    padding: '10vw 0vw'
-  },
-  column: {
-    flexBasis: '50%',
-    flexShrink: 0
-  }
+  body: { background: 'linear-gradient(#DDDDDD, #EEEEEE)' },
+  inner: { padding: '10vw 0vw' },
+  column: { flexBasis: '50%', flexShrink: 0 },
 }));
 
 const FC: React.FC = () => {
@@ -71,12 +64,31 @@ const FC: React.FC = () => {
               caption={intl.format(offices.management.primary)}
               address={intl.format(offices.management.secondary) as string[]}
             />
+            <Address
+              caption={intl.format(offices.hq.primary)}
+              address={intl.format(offices.hq.secondary) as string[]}
+            />
           </ListItem>
           <Divider variant="inset" component="li" />
           <ListItem>
             <Address
-              caption={intl.format(offices.hq.primary)}
-              address={intl.format(offices.hq.secondary) as string[]}
+              caption={intl.format(offices.sales.primary)}
+              address={intl.format(offices.sales.secondary) as string[]}
+            />
+            <Address
+              caption={intl.format(offices.factory.primary)}
+              address={intl.format(offices.factory.secondary) as string[]}
+            />
+          </ListItem>
+          <Divider variant="inset" component="li" />
+          <ListItem>
+            <Address
+              caption={intl.format(offices.vietnam.primary)}
+              address={intl.format(offices.vietnam.secondary) as string[]}
+            />
+            <Address
+              caption={intl.format(offices.cambodia.primary)}
+              address={intl.format(offices.cambodia.secondary) as string[]}
             />
           </ListItem>
         </List>
@@ -95,12 +107,12 @@ const FC: React.FC = () => {
             const splitCount = 2;
 
             return (
-              <div key={hash(group)}>
-                {Array.from({ length: Math.ceil(group.length / 2) }, (v, i) =>
+              <div key={index}>
+                {Array.from({ length: Math.ceil(group.length / 2) }, (__, i) =>
                   group.slice(i * splitCount, i * splitCount + splitCount)
-                ).map(line => (
-                  <ListItem key={hash(line)}>
-                    {line.map(item => (
+                ).map((line, i) => (
+                  <ListItem key={i}>
+                    {line.map((item) => (
                       <ListItemText
                         key={item}
                         className={classes.column}
