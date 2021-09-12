@@ -7,7 +7,8 @@ const useStyles = makeStyles(() => ({
   body: {
     background: 'linear-gradient(#DDDDDD, #EEEEEE)',
     display: 'table',
-    height: '66vh',
+    minHeight: '80vh',
+    padding: '10vh 0vw',
   },
   inner: { display: 'table-cell', verticalAlign: 'middle' },
 }));
