@@ -61,8 +61,8 @@ const FC: React.FC = () => {
           <Divider variant="inset" component="li" />
           <ListItem>
             <Address
-              caption={intl.format(offices.management.primary)}
-              address={intl.format(offices.management.secondary) as string[]}
+              caption={intl.format(offices.studio.primary)}
+              address={intl.format(offices.studio.secondary) as string[]}
             />
             <Address
               caption={intl.format(offices.hq.primary)}
@@ -76,8 +76,8 @@ const FC: React.FC = () => {
               address={intl.format(offices.sales.secondary) as string[]}
             />
             <Address
-              caption={intl.format(offices.factory.primary)}
-              address={intl.format(offices.factory.secondary) as string[]}
+              caption={intl.format(offices.management.primary)}
+              address={intl.format(offices.management.secondary) as string[]}
             />
           </ListItem>
           <Divider variant="inset" component="li" />
@@ -86,6 +86,13 @@ const FC: React.FC = () => {
               caption={intl.format(offices.vietnam.primary)}
               address={intl.format(offices.vietnam.secondary) as string[]}
             />
+            <Address
+              caption={intl.format(offices.factory.primary)}
+              address={intl.format(offices.factory.secondary) as string[]}
+            />
+          </ListItem>
+          <Divider variant="inset" component="li" />
+          <ListItem>
             <Address
               caption={intl.format(offices.cambodia.primary)}
               address={intl.format(offices.cambodia.secondary) as string[]}
