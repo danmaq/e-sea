@@ -11,11 +11,11 @@
   "author": "danmaq <info@danmaq.com> (http://danmaq.com/)",
   "repository": "github:danmaq/e-sea",
   "scripts": {
-    "build": "react-static build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-static build",
     "build:stage": "react-static build --staging",
-    "bundle": "react-static bundle",
+    "bundle": "NODE_OPTIONS=--openssl-legacy-provider react-static bundle",
     "export": "react-static export",
-    "lint": "eslint --cache --fix --format codeframe .",
+    "lint": "eslint --cache --fix --format codeframe \"./**/*\"",
     "prepare": "husky install",
     "serve": "serve dist -p 3000 -s",
     "start": "react-static start"
