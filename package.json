@@ -16,7 +16,7 @@
     "bundle": "NODE_OPTIONS=--openssl-legacy-provider react-static bundle",
     "export": "react-static export",
     "lint": "eslint --cache --fix --format codeframe \"./**/*\"",
-    "prepare": "husky install",
+    "prepare": "path-exists .git && husky install || exit 0",
     "serve": "serve dist -p 3000 -s",
     "start": "react-static start"
   },
@@ -64,6 +64,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-yaml": "^0.5.0",
     "husky": "^7.0.4",
+    "path-exists-cli": "^2.0.0",
     "prettier": "^2.5.1",
     "serve": "^13.0.2",
     "typescript": "^3.9.10",
