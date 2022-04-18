@@ -5,7 +5,10 @@
   },
   "pages": {
     "top": {
-      "hero": ["FOR TOMO", "RROW FUN"],
+      "hero": [
+        "FOR TOMO",
+        "RROW FUN"
+      ],
       "overview": {
         "primary": "Take it, Easy.",
         "secondary": [
@@ -25,39 +28,57 @@
         "secondary": [
           {
             "title": "WEB 開発",
-            "note": [""]
+            "note": [
+              ""
+            ]
           },
           {
             "title": "SESコンサルティング",
-            "note": [""]
+            "note": [
+              ""
+            ]
           },
           {
             "title": "農林水産業",
-            "note": ["農林水産省認可済"]
+            "note": [
+              "農林水産省認可済"
+            ]
           },
           {
             "title": "食品業界 IT 化",
-            "note": [""]
+            "note": [
+              ""
+            ]
           },
           {
             "title": "RPA 開発",
-            "note": ["Robotic Process Automation"]
+            "note": [
+              "Robotic Process Automation"
+            ]
           },
           {
             "title": "BPO",
-            "note": ["Business Process Outsourcing"]
+            "note": [
+              "Business Process Outsourcing"
+            ]
           },
           {
             "title": "M & A",
-            "note": ["ブロックチェーン仲介実績あり"]
+            "note": [
+              "ブロックチェーン仲介実績あり"
+            ]
           },
           {
             "title": "コンテンツパブリッシング",
-            "note": [""]
+            "note": [
+              ""
+            ]
           },
           {
             "title": "太陽光発電 投資アドバイザー",
-            "note": [""]
+            "note": [
+              ""
+            ]
           }
         ]
       },
@@ -102,6 +123,22 @@
             ]
           },
           {
+            "role": "COO / Product manager",
+            "name": "SHO Hayashida",
+            "skill": [
+              "ウェブアプリ・モバイルアプリ開発",
+              "日系自動車メーカー、政府系プロジェクト"
+            ]
+          },
+          {
+            "role": "Graphic designer",
+            "name": "KOJI Matsuo",
+            "skill": [
+              "WEBデザイン、現場カメラ撮影、３Dグラフィックまで",
+              "元都内広告代理店にてTV制作業務を行う"
+            ]
+          },
+          {
             "role": "Team Vietnam CTO",
             "name": "Nguyen Dao Viet",
             "skill": [
@@ -129,15 +166,21 @@
         "body": {
           "company": {
             "primary": "e-sea 株式会社",
-            "secondary": ["英文登記: E-SEA CORPORATION"]
+            "secondary": [
+              "英文登記: E-SEA CORPORATION"
+            ]
           },
           "date": {
             "primary": "設立",
-            "secondary": ["2010 年 2 月"]
+            "secondary": [
+              "2010 年 2 月"
+            ]
           },
           "money": {
             "primary": "資本金",
-            "secondary": ["300 万円"]
+            "secondary": [
+              "300 万円"
+            ]
           },
           "offices": {
             "cambodia": {
@@ -149,7 +192,10 @@
             },
             "factory": {
               "primary": "第1工場 Marine Park Hagi 萩市 道の駅店",
-              "secondary": ["〒7580011", "山口県萩市椿東前小畑2区4216"]
+              "secondary": [
+                "〒7580011",
+                "山口県萩市椿東前小畑2区4216"
+              ]
             },
             "hq": {
               "primary": "本社",
@@ -161,7 +207,10 @@
             },
             "management": {
               "primary": "請求管理部",
-              "secondary": ["〒1510053", "東京都渋谷区代々木 2-18-6-802"]
+              "secondary": [
+                "〒1510053",
+                "東京都渋谷区代々木 2-18-6-802"
+              ]
             },
             "studio": {
               "primary": "巣鴨地蔵通り ロケスタジオ",
@@ -225,7 +274,9 @@
             "株式会社NAM SUNGテクノロジー",
             "株式会社メデイアブリッジ"
           ],
-          ["他 多数"]
+          [
+            "他 多数"
+          ]
         ]
       },
       "contact": {
@@ -237,7 +288,9 @@
     "error": {
       "http404": {
         "primary": "404",
-        "secondary": ["Oh no's! We couldn't find that page :("]
+        "secondary": [
+          "Oh no's! We couldn't find that page :("
+        ]
       }
     }
   }
