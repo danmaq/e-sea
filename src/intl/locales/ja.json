@@ -102,6 +102,22 @@
             ]
           },
           {
+            "role": "COO / Product manager",
+            "name": "SHO Hayashida",
+            "skill": [
+              "ウェブアプリ・モバイルアプリ開発",
+              "日系自動車メーカー、政府系プロジェクト"
+            ]
+          },
+          {
+            "role": "Graphic designer",
+            "name": "KOJI Matsuo",
+            "skill": [
+              "WEBデザイン、現場カメラ撮影、3D グラフィックまで",
+              "元都内広告代理店にてTV制作業務を行う"
+            ]
+          },
+          {
             "role": "Team Vietnam CTO",
             "name": "Nguyen Dao Viet",
             "skill": [

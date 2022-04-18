@@ -1,0 +1,12 @@
+version: 2
+updates:
+  directory: /
+  labels:
+    - dependencies
+  package-ecosystem: npm
+  reviewers:
+    - danmaq
+  assignees:
+    - danmaq
+  schedule:
+    interval: weekly

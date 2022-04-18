@@ -1,9 +1,0 @@
-box: node
-build:
-  steps:
-    - npm-install
-    - script:
-      name: Production build
-      code: npm run build
-deploy:
-  steps: []
