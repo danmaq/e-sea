@@ -1,15 +1,16 @@
 {
   "name": "e-sea",
   "version": "0.1.0",
+  "private": true,
   "description": "E-SEA official site",
   "keywords": [
     "website"
   ],
   "homepage": "https://www.e-sea.blue",
   "bugs": "https://github.com/danmaq/e-sea/issues",
+  "repository": "github:danmaq/e-sea",
   "license": "Apache-2.0",
   "author": "danmaq <info@danmaq.com> (http://danmaq.com/)",
-  "repository": "github:danmaq/e-sea",
   "scripts": {
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-static build",
     "build:stage": "react-static build --staging",
@@ -83,6 +84,5 @@
   "engines": {
     "node": ">=17.9.0",
     "npm": ">=8.7.0"
-  },
-  "private": true
+  }
 }
