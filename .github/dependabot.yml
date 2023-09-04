@@ -1,12 +1,17 @@
 version: 2
 updates:
-  directory: /
-  labels:
-    - dependencies
-  package-ecosystem: npm
-  reviewers:
-    - danmaq
-  assignees:
-    - danmaq
-  schedule:
-    interval: weekly
+  - assignees:
+      - danmaq
+    directory: /
+    labels:
+      - dependencies
+    package-ecosystem: npm
+    reviewers:
+      - danmaq
+    schedule:
+      interval: monthly
+registries:
+  npm-github:
+    token: ${{ secrets.NPM_TOKEN }}
+    type: npm-registry
+    url: https://registry.npmjs.org

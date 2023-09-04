@@ -8,21 +8,36 @@ permissions:
   contents: read
 jobs:
   build:
+    defaults:
+      run:
+        shell: ${{ matrix.platform.shell }}
     name: Build and tests
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.platform.os }}
     steps:
+      - name: Set git to use LF
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
       - name: Stages the pushed branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Use the specified version of Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           cache: ${{ !env.ACT && 'npm' || '' }}
           node-version-file: .node-version
-      - name: set npm config
-        run: npm config set unsafe-perm true
       - name: Resolve the dependencies
         run: npm ci
       - run: npm run build
       - run: npm run bundle
       - run: npm run export
       - run: npm run lint
+    strategy:
+      matrix:
+        platform:
+          - os: ubuntu-latest
+            shell: bash
+          - os: windows-latest
+            shell: bash
+          - os: windows-latest
+            shell: powershell
+      fail-fast: false

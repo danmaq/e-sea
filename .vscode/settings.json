@@ -1,3 +1,16 @@
 {
+  "files.readonlyInclude": {
+    "**/.husky/_/*": true,
+    "**/node_modules/**/*": true
+  },
+  "files.watcherExclude": {
+    "**/.husky/_/*": true,
+    "**/node_modules/**/*": true
+  },
+  "git.branchProtection": ["master"],
+  "search.exclude": {
+    "**/.husky/_/*": true,
+    "**/node_modules/**/*": true
+  },
   "typescript.tsdk": "node_modules/typescript/lib"
 }

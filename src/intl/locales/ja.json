@@ -4,6 +4,12 @@
     "description": "e-sea は、自分の可能性を信じてチャレンジする人を応援します。"
   },
   "pages": {
+    "error": {
+      "http404": {
+        "primary": "404",
+        "secondary": ["Oh no's! We couldn't find that page :("]
+      }
+    },
     "top": {
       "hero": ["FOR TOMO", "RROW FUN"],
       "overview": {
@@ -107,6 +113,15 @@
             "skill": [
               "ウェブアプリ・モバイルアプリ開発",
               "日系自動車メーカー、政府系プロジェクト"
+            ]
+          },
+          {
+            "role": "Sales engineer",
+            "name": "ITARU Tsuchida",
+            "skill": [
+              "北陸先端技術科学工科大学院出身",
+              "組み込み半導体技術に長年従事",
+              "ギークハウス品川"
             ]
           },
           {
@@ -249,12 +264,6 @@
         "secondary": "伊澤までお問い合わせください。"
       },
       "footer": "Copyright ©︎{date} {company} All right reserved."
-    },
-    "error": {
-      "http404": {
-        "primary": "404",
-        "secondary": ["Oh no's! We couldn't find that page :("]
-      }
     }
   }
 }
