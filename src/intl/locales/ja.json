@@ -4,12 +4,6 @@
     "description": "e-sea は、自分の可能性を信じてチャレンジする人を応援します。"
   },
   "pages": {
-    "error": {
-      "http404": {
-        "primary": "404",
-        "secondary": ["Oh no's! We couldn't find that page :("]
-      }
-    },
     "top": {
       "hero": ["FOR TOMO", "RROW FUN"],
       "overview": {
@@ -122,16 +116,6 @@
               "ウェブアプリ・モバイルアプリ開発",
               "インディーズゲーム開発",
               "新規事業開発、プロダクト研究、技術研究"
-            ]
-          },
-          {
-            "role": "CIO / Sales engineer",
-            "name": "ITARU Tsuchida",
-            "skill": [
-              "宅地建物取引士",
-              "ギークハウス品川代表",
-              "組み込みや画像処理に長年従事",
-              "IEEE 等の査読付き論文複数本 (画像処理分野)"
             ]
           },
           {
@@ -274,6 +258,12 @@
         "secondary": "伊澤までお問い合わせください。"
       },
       "footer": "Copyright ©︎{date} {company} All right reserved."
+    },
+    "error": {
+      "http404": {
+        "primary": "404",
+        "secondary": ["Oh no's! We couldn't find that page :("]
+      }
     }
   }
 }
