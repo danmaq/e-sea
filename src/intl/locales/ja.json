@@ -4,6 +4,12 @@
     "description": "e-sea は、自分の可能性を信じてチャレンジする人を応援します。"
   },
   "pages": {
+    "error": {
+      "http404": {
+        "primary": "404",
+        "secondary": ["Oh no's! We couldn't find that page :("]
+      }
+    },
     "top": {
       "hero": ["FOR TOMO", "RROW FUN"],
       "overview": {
@@ -30,6 +36,14 @@
           {
             "title": "SESコンサルティング",
             "note": [""]
+          },
+          {
+            "note": [""],
+            "title": "人材紹介免許 認定事業者"
+          },
+          {
+            "note": [""],
+            "title": "中小機構 IT導入補助金 認定事業者"
           },
           {
             "title": "農林水産業",
@@ -184,17 +198,13 @@
                 "萩池々茶屋ビル 2F"
               ]
             },
+            "hr": {
+              "primary": "HR リクルートオフィス",
+              "secondary": ["〒1100016", "東京都台東区台東2-7-3", "瀬戸ビル 3F"]
+            },
             "management": {
               "primary": "請求管理部",
               "secondary": ["〒1510053", "東京都渋谷区代々木 2-18-6-802"]
-            },
-            "studio": {
-              "primary": "巣鴨地蔵通り ロケスタジオ",
-              "secondary": [
-                "〒1700002",
-                "東京都豊島区巣鴨 3-21-16",
-                "グレースベルツリービル 5F 萩中央水産(株)"
-              ]
             },
             "sales": {
               "primary": "営業部",
@@ -202,6 +212,14 @@
                 "〒1600007",
                 "東京都新宿区荒木町5-4",
                 "クサフカビル5F"
+              ]
+            },
+            "studio": {
+              "primary": "巣鴨地蔵通り ロケスタジオ",
+              "secondary": [
+                "〒1700002",
+                "東京都豊島区巣鴨 3-21-16",
+                "グレースベルツリービル 5F 萩中央水産(株)"
               ]
             },
             "vietnam": {
@@ -258,12 +276,6 @@
         "secondary": "伊澤までお問い合わせください。"
       },
       "footer": "Copyright ©︎{date} {company} All right reserved."
-    },
-    "error": {
-      "http404": {
-        "primary": "404",
-        "secondary": ["Oh no's! We couldn't find that page :("]
-      }
     }
   }
 }
