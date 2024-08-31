@@ -51,6 +51,10 @@ export const top = {
         primary: { id: 'pages.top.about.body.offices.hq.primary' },
         secondary: { id: 'pages.top.about.body.offices.hq.secondary' },
       }),
+      hr: defineMessages({
+        primary: { id: 'pages.top.about.body.offices.hr.primary' },
+        secondary: { id: 'pages.top.about.body.offices.hr.secondary' },
+      }),
       management: defineMessages({
         primary: { id: 'pages.top.about.body.offices.management.primary' },
         secondary: { id: 'pages.top.about.body.offices.management.secondary' },
