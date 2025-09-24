@@ -96,8 +96,7 @@
     "prettier-plugin-sort-json": "^4.1.1",
     "rimraf": "^6.0.1",
     "serve": "^13.0.4",
-    "typescript": "^3.9.10",
-    "typescript-eslint-language-service": "^4.1.5"
+    "typescript": "^3.9.10"
   },
   "packageManager": "npm@10.9.3+sha512.e84875bb943e908557780f1eee5d9cfc7a67145730ae4b77ef10ccba30f96ded6096859af69ea3dc5b2fde60725d79aa247cbed9c12544c30bf28a4d4fbc4825",
   "engines": {
