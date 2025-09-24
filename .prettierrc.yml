@@ -4,3 +4,4 @@ plugins:
   - prettier-plugin-sh
   - prettier-plugin-sort-json
 singleQuote: true
+trailingComma: es5
