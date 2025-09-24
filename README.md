@@ -8,7 +8,7 @@
 
 ### 必要環境
 
-- [Node.js](https://nodejs.org/ja/) バージョン 16.9 以降
+- [Node.js](https://nodejs.org/ja/) LTS Jod v22 以降
 
 ### セットアップ
 
