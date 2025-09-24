@@ -1,4 +1,12 @@
 {
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    ".eslintrc.yml": ".eslintignore",
+    ".prettierrc.yml": ".prettierignore",
+    ".tool-versions": ".node-version, .nvmrc",
+    "package.json": ".npmrc, package-lock.json"
+  },
   "files.readonlyInclude": {
     "**/.husky/_/*": true,
     "**/node_modules/**/*": true
