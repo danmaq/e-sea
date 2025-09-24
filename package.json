@@ -11,6 +11,7 @@
   "repository": "github:danmaq/e-sea",
   "license": "Apache-2.0",
   "author": "danmaq <info@danmaq.com> (http://danmaq.com/)",
+  "files": [],
   "scripts": {
     "build": "cross-env NODE_OPTIONS=\"--no-experimental-fetch --openssl-legacy-provider\" react-static build",
     "build:stage": "react-static build --staging",
