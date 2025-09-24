@@ -4,6 +4,7 @@
   "explorer.fileNesting.patterns": {
     ".eslintrc.yml": ".eslintignore",
     ".gitattributes": ".gitignore",
+    ".markdownlint.*": ".markdownlint-cli2.*",
     ".prettierrc.yml": ".prettierignore",
     ".tool-versions": ".node-version, .nvmrc",
     "package.json": ".npmrc, package-lock.json"
