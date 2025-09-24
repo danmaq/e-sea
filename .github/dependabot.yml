@@ -1,13 +1,9 @@
 version: 2
 updates:
-  - assignees:
-      - danmaq
-    directory: /
+  - directory: /
     labels:
       - dependencies
     package-ecosystem: npm
-    reviewers:
-      - danmaq
     schedule:
       interval: monthly
 registries:
