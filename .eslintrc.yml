@@ -15,6 +15,7 @@ extends:
   # 極力 Airbnb ルールを適用したいため、末尾に近づけて配置する
   - airbnb-typescript
   - plugin:prettier/recommended
+  - plugin:oxlint/recommended
 overrides:
   - files:
       - '*.js'
