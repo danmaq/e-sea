@@ -32,7 +32,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h3"
-          variant="h3"
+          variant="h5"
           color="textPrimary"
           gutterBottom
         >
@@ -43,7 +43,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -54,7 +54,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -65,7 +65,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -76,7 +76,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -84,7 +84,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h5"
-          variant="h5"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -95,7 +95,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h5"
-          variant="h5"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -106,7 +106,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -117,7 +117,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -131,7 +131,7 @@ const FC: React.FC = () => {
         <hr />
         <Typography
           component="h3"
-          variant="h3"
+          variant="h5"
           color="textPrimary"
           gutterBottom
         >
@@ -142,7 +142,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -153,7 +153,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -164,7 +164,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h5"
-          variant="h5"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -252,7 +252,7 @@ const FC: React.FC = () => {
         </ul>
         <Typography
           component="h5"
-          variant="h5"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -263,7 +263,7 @@ const FC: React.FC = () => {
         </ul>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -274,7 +274,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -297,7 +297,7 @@ const FC: React.FC = () => {
         </ol>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -308,7 +308,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -328,7 +328,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -339,7 +339,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -351,7 +351,7 @@ const FC: React.FC = () => {
         </Typography>
         <Typography
           component="h4"
-          variant="h4"
+          variant="h6"
           color="textPrimary"
           gutterBottom
         >
@@ -363,7 +363,7 @@ const FC: React.FC = () => {
         <hr />
         <Typography
           component="h3"
-          variant="h3"
+          variant="h5"
           color="textPrimary"
           gutterBottom
         >
