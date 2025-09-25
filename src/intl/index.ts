@@ -32,10 +32,14 @@ export interface About {
   date: Item;
   money: Item;
   offices: {
-    sales: Item;
-    management: Item;
-    randb: Item;
+    cambodia: Item;
+    factory: Item;
     hq: Item;
+    hr: Item;
+    management: Item;
+    sales: Item;
+    studio: Item;
+    vietnam: Item;
   };
 }
 export type Customers = string[];
