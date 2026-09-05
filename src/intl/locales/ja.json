@@ -79,18 +79,18 @@
             "name": "SHŪHEI Nomura",
             "skill": [
               "ウェブアプリ・モバイルアプリ開発",
+              "AI ループエンジニアリングのコンサルティング",
               "開発初心者向け教材作成・勉強会など",
               "太陽光発電 投資アドバイザー"
             ]
           },
           {
-            "role": "CTO / Web & Game developer",
-            "name": "YUUKI Hamada",
+            "role": "UNITY事業部 執行役員 兼 CTO",
+            "name": "KAZUMA Ishida",
             "skill": [
               "ウェブアプリ・モバイルアプリ開発",
-              "サウンド・音楽制作",
-              "ゲーム開発",
-              "超現実的コンテンツ演出・ディレクション"
+              "インディーズゲーム開発",
+              "新規事業開発、プロダクト研究、技術研究"
             ]
           },
           {
@@ -120,15 +120,6 @@
             ]
           },
           {
-            "role": "UNITY事業部 執行役員 兼 COO",
-            "name": "KAZUMA Ishida",
-            "skill": [
-              "ウェブアプリ・モバイルアプリ開発",
-              "インディーズゲーム開発",
-              "新規事業開発、プロダクト研究、技術研究"
-            ]
-          },
-          {
             "role": "Graphic designer",
             "name": "KOJI Matsuo",
             "skill": [
@@ -150,6 +141,32 @@
             "skill": [
               "ARTからWEBまでダイナミックなデザイン",
               "万人受けするシュールさをモチーフとしている"
+            ]
+          },
+          {
+            "role": "Special Adviser",
+            "name": "MASAAKI KAMIMURA",
+            "skill": [
+              "元警視庁 警視正 組織犯罪対策部 理事官 / 総理府迎賓館 (事務官)",
+              "各国トップの要人警護責任者経験を有する"
+            ]
+          },
+          {
+            "role": "TEAM VIETNAM PMO",
+            "name": "HUNG TOM",
+            "skill": [
+              "ベトナムで歴史ある最難関の理工系大学 HUST を卒業後、日本に単独で来日",
+              "上場会社での PG/PM 勤務などを経て、ハノイで起業"
+            ]
+          },
+          {
+            "role": "Technical Advisor / Web & Game developer",
+            "name": "YUUKI Hamada",
+            "skill": [
+              "ウェブアプリ・モバイルアプリ開発",
+              "サウンド・音楽制作",
+              "ゲーム開発",
+              "超現実的コンテンツ演出・ディレクション"
             ]
           },
           {
